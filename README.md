@@ -1,59 +1,57 @@
-design-audit-agent
-===================
+# 🧠 Design Audit Agent
 
-What this agent does
-- A CLI tool that analyzes screenshots for visual design issues (Level 1).
-- Compares baseline and current screenshots to detect visual regressions (Level 2).
+An AI-powered design auditing system that analyzes UI screenshots and web pages to detect visual issues, regressions, and usability problems using multimodal AI models.
 
-Architecture (ASCII)
+---
 
-agent/
-  - auditor.py (level1)
-  - comparator.py (level2)
-models/
-  - gemini_client.py
-  - grok_client.py
-main.py (CLI)
+# 🚀 What this project does
 
-Setup (Windows)
-1. Create and activate a Python 3.11+ virtualenv.
+This system evaluates UI/UX designs across **three progressive intelligence levels**:
 
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-python -m playwright install chromium
-```
+---
 
-2. Copy `.env.example` to `.env` and set `GEMINI_API_KEY` and/or `GROK_API_KEY`.
-   If your provider requires a custom endpoint, also set `GEMINI_API_URL` or `GROK_API_URL`.
+# 🟢 Level 1 — Design Audit (Single Image Analysis)
 
-How to get API keys
-- Gemini: https://cloud.google.com/ (search Gemini API console)
-- Grok/xAI: https://console.groq.com/keys
+Analyzes a single screenshot and identifies:
 
-Groq notes
-- The Grok client now uses the OpenAI-compatible Groq endpoint by default.
-- Default Grok vision model: `meta-llama/llama-4-scout-17b-16e-instruct`
-- If your Groq project requires a different base URL, set `GROK_API_URL=https://api.groq.com/openai/v1`.
+- Layout issues
+- Alignment problems
+- Color contrast issues
+- Accessibility concerns
+- UI/UX improvements
 
-Usage examples
-- Audit an image:
-  `python main.py audit path/to/screenshot.png`
-- Compare two images:
-  `python main.py compare baseline.png current.png`
-- Use mock mode for local CLI verification without real API access:
-  `python main.py audit path/to/screenshot.png --mock`
-  `python main.py compare baseline.png current.png --mock`
-- Run the web UI locally:
-  `python web.py`
-  Then open `http://127.0.0.1:5000` in your browser.
-  The UI supports drag-and-drop image upload for both Level 1 and Level 2 flows.
-- Run a Level 3 autonomous scan:
-  `python main.py scan --config path/to/scan-config.json`
+### ▶️ Run command:
+```bash
+python main.py audit path/to/screenshot.png
 
-Sample Level 3 scan config:
-```json
+🟡 Level 2 — Visual Regression Comparison
+
+Compares two screenshots:
+
+Baseline (before)
+Current (after)
+
+Detects:
+
+UI regressions
+Visual improvements
+Layout shifts
+Accessibility changes
+Pixel-level differences
+▶️ Run command:
+python main.py compare baseline.png current.png
+🔵 Level 3 — Autonomous UI Audit System
+
+Fully automated pipeline that:
+
+Loads configuration file
+Opens URLs or test pages
+Captures screenshots automatically
+Compares baseline vs current states
+Generates structured regression reports
+▶️ Run command:
+python main.py scan --config path/to/scan-config.json
+📄 Example config:
 {
   "mode": "compare",
   "page_name": "home",
@@ -63,13 +61,31 @@ Sample Level 3 scan config:
   "mock": false,
   "viewport": { "width": 1280, "height": 900 }
 }
-```
+🖥️ Web Interface
 
-Run tests
-```powershell
+Run the Flask UI locally:
+
+python web.py
+
+Then open:
+
+http://127.0.0.1:5000
+⚙️ Setup Instructions
+1. Create virtual environment
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+2. Install dependencies
+pip install -r requirements.txt
+3. Install browser for automation
+python -m playwright install chromium
+
+. Environment setup
+
+Copy .env.example → .env
+
+Add API keys:
+
+GEMINI_API_KEY=your_key_here
+GROK_API_KEY=your_key_here
+🧪 Testing
 pytest -q
-```
-
-Known limitations
-- Level 3 autonomous browser scanning is not implemented in this build.
-- Model clients are minimal wrappers; tests mock API calls.
