@@ -1,0 +1,47 @@
+{
+  "scan_id": "29c8cc36-1492-4142-9b7c-8d4d1c1690a2",
+  "timestamp": "2026-06-07T08:20:10.854831Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\scan\\design_audit_audit_e5b10b98.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Star rating indicators under each book cover (e.g., 'A Light in the Attic')",
+      "issue": "The bright yellow used for filled stars and the very light grey used for unfilled stars have extremely low contrast against the white background, failing WCAG AA non-text contrast requirements (minimum 3:1).",
+      "user_impact": "Users with low vision or color vision deficiencies will struggle to determine the star ratings of the books.",
+      "recommendation": "Change the active star color to a darker amber/gold (e.g., #b57c00) and the inactive star color to a medium grey (e.g., #767676) to ensure they are clearly visible against the white background.",
+      "confidence": 95,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F002",
+      "principle": "Visual Hierarchy",
+      "severity": "medium",
+      "location": "Book titles below star ratings in the product grid (e.g., 'Sapiens: A Brief History ...')",
+      "issue": "Book titles are strictly truncated to a single line with ellipses. This cuts off crucial book information, making titles look repetitive and uniform, which disrupts visual scanning and hierarchy.",
+      "user_impact": "Users cannot see the full title of the books without navigating to the product page, reducing the scannability of the list.",
+      "recommendation": "Remove single-line truncation and use CSS line-clamp to allow titles to wrap up to 2 or 3 lines, ensuring a consistent height for all product cards.",
+      "confidence": 90,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F003",
+      "principle": "Spacing",
+      "severity": "medium",
+      "location": "Sidebar category list on the left side of the page",
+      "issue": "The list of categories is extremely dense with minimal vertical spacing (line-height/padding) between items. This creates a dense, hard-to-read vertical block that contrasts poorly with the open spacing of the main grid.",
+      "user_impact": "Users with motor impairments or those on touch devices will find it difficult to accurately tap or click individual category links.",
+      "recommendation": "Increase the vertical padding of the sidebar list items to at least 8px (or a line-height of 1.6) to improve readability and target size, and consider adding collapsible categories to reduce the list length.",
+      "confidence": 85,
+      "visibility_status": "visible"
+    }
+  ],
+  "summary": "Found 3 valid findings.",
+  "total_findings": 3,
+  "critical_count": 0,
+  "scan_duration_ms": 21614,
+  "warning": null,
+  "low_confidence": null
+}

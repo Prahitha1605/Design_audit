@@ -1,0 +1,51 @@
+{
+  "scan_id": "ad0117b8-c473-4f50-9e6d-d9c3f113cfed",
+  "timestamp": "2026-06-07T05:49:58.814356Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-54\\test_severity_and_evidence_fie0\\a.png",
+  "current_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-54\\test_severity_and_evidence_fie0\\b.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "D001",
+      "location": "hero",
+      "what_changed": "Color changed from #e5e5e5 to #d8d8d8 in the affected region.",
+      "direction": "regression",
+      "severity": "high",
+      "reasoning": "Contrast ratio dropped below 4.5:1.",
+      "ux_impact": "Button text is harder to read.",
+      "is_accessibility_regression": true,
+      "confidence": 92,
+      "before_color": "#428bca",
+      "after_color": "#7db5e8",
+      "contrast_before": 5.6,
+      "contrast_after": 2.8,
+      "shift_x_px": null,
+      "shift_y_px": 18,
+      "pixel_diff_percentage": 6.3,
+      "bbox": {
+        "x": 10,
+        "y": 20,
+        "width": 100,
+        "height": 40
+      }
+    }
+  ],
+  "verdict": "net_regression",
+  "accessibility_regressions": 1,
+  "summary": "Contrast regression detected.",
+  "scan_duration_ms": 30,
+  "baseline_size": [
+    100,
+    100
+  ],
+  "current_size": [
+    100,
+    100
+  ],
+  "pixel_diff_pct": null,
+  "diff_pixels": null,
+  "diff_bbox": null,
+  "diff_overlay_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\compare_overlay_5465c449fb6a49ae84ba0dc9cfe40182.png",
+  "baseline_crop_path": null,
+  "current_crop_path": null
+}

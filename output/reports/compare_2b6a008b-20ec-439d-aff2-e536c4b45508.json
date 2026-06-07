@@ -1,0 +1,37 @@
+{
+  "scan_id": "2b6a008b-20ec-439d-aff2-e536c4b45508",
+  "timestamp": "2026-06-07T05:27:18.692591Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-49\\test_local_diff_evidence_in_fa0\\baseline.png",
+  "current_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-49\\test_local_diff_evidence_in_fa0\\current.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "fallback_001",
+      "location": "page",
+      "what_changed": "Pixel-level difference of 100.0% detected.",
+      "direction": "regression",
+      "severity": "high",
+      "reasoning": "Pixel-level difference of 100.0% detected.",
+      "ux_impact": "Likely a significant usability regression.",
+      "is_accessibility_regression": true,
+      "confidence": 90,
+      "before_color": null,
+      "after_color": null,
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 100.0,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 100
+      }
+    }
+  ],
+  "verdict": "net_regression",
+  "accessibility_regressions": 1,
+  "summary": "Found 1 differences: 1 regressions, 0 improvements, 0 neutral. Pixel diff is 100.0%.",
+  "scan_duration_ms": 16
+}

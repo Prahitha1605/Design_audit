@@ -1,0 +1,47 @@
+{
+  "scan_id": "0b883185-2686-4f00-a276-612ad30e0046",
+  "timestamp": "2026-06-07T08:26:44.075681Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\scan\\design_audit_audit_bad06b8d.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Star rating indicators under each book cover image",
+      "issue": "The active yellow stars used for ratings have insufficient contrast (estimated under 2:1) against the solid white background, violating WCAG non-text contrast guidelines.",
+      "user_impact": "Users with low visual acuity or those operating in high-glare environments will find it extremely difficult to distinguish the star ratings of the products.",
+      "recommendation": "Darken the yellow color of the active stars to a deep gold or amber hue (such as #B8860B) to ensure a minimum contrast ratio of 3:1 against the white background.",
+      "confidence": 95,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F002",
+      "principle": "Spacing",
+      "severity": "medium",
+      "location": "Left sidebar genre navigation list",
+      "issue": "The vertical spacing (line-height) and target padding of the genre links in the sidebar are too compact, creating a high-density list with small click areas.",
+      "user_impact": "Users with motor impairments or those on touch-screen devices may struggle to select the correct genre link, resulting in high rates of misclicks.",
+      "recommendation": "Increase the line-height of the list items to 1.6 and apply 6px of vertical padding to the links to improve target size and readability.",
+      "confidence": 90,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F003",
+      "principle": "Visual Hierarchy",
+      "severity": "medium",
+      "location": "Product titles on the book grid cards",
+      "issue": "Book titles are aggressively truncated to a single line with ellipses (e.g., 'Sapiens: A Brief History ...'), hiding critical product identification details.",
+      "user_impact": "Browsing efficiency is reduced because users must click into individual product pages or rely on hover tools to read full titles.",
+      "recommendation": "Allow product titles to wrap to a maximum of two lines with a defined line-height before applying ellipsis truncation, accommodating longer titles visually.",
+      "confidence": 92,
+      "visibility_status": "visible"
+    }
+  ],
+  "summary": "Found 3 valid findings.",
+  "total_findings": 3,
+  "critical_count": 0,
+  "scan_duration_ms": 18280,
+  "warning": null,
+  "low_confidence": null
+}

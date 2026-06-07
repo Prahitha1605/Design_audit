@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}Level 1 — Design Audit{% endblock %}
+
+{% block content %}
+<div class="level-page">
+  <div class="lp-sidebar">
+    <a href="/" class="back-link">← Dashboard</a>
+    <div class="lp-meta">
+      <div class="lp-index">01</div>
+      <h1 class="lp-title">Design Audit</h1>
+      <p class="lp-desc">Evaluates a single screenshot against five design principles. Every finding is grounded in what's visible — no hallucinations.</p>
+    </div>
+    <div class="lp-criteria">
+      <div class="criteria-heading">Acceptance criteria</div>
+      <ul class="criteria-list">
+        <li>PNG, JPG, WebP input</li>
+        <li>≥ 3 distinct findings</li>
+        <li>Principle · Location · Impact · Fix</li>
+        <li>Confidence score per finding (0–100%)</li>
+        <li>Severity: critical / high / medium / low / info</li>
+        <li>Zero hallucinations</li>
+      </ul>
+    </div>
+    <div class="lp-principles">
+      <div class="criteria-heading">Principles evaluated</div>
+      <div class="principle-tags">
+        <span class="ptag">Visual Hierarchy</span>
+        <span class="ptag">WCAG Contrast</span>
+        <span class="ptag">Spacing</span>
+        <span class="ptag">Alignment</span>
+        <span class="ptag">Consistency</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="lp-main">
+    <form method="post" action="/analyze" enctype="multipart/form-data" class="lp-form">
+      <div class="form-section">
+        <label class="form-label">Screenshot <span class="form-hint">PNG · JPG · WebP</span></label>
+        <div class="dropzone">
+          <input type="file" name="image" accept="image/png,image/jpeg,image/webp" required />
+          <div class="dropzone-inner">
+            <div class="dz-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="17 8 12 3 7 8"/>
+                <line x1="12" y1="3" x2="12" y2="15"/>
+              </svg>
+            </div>
+            <span class="dropzone-label">Drop screenshot here, or click to browse</span>
+            <span class="dz-hint">Max 10 MB</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section form-section--row">
+        <div class="form-field">
+          <label class="form-label" for="model_l1">Vision model</label>
+          <select id="model_l1" name="model" class="form-select">
+            <option value="gemini">Gemini</option>
+            <option value="grok">Grok</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-run">
+        <span>Run Audit</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </form>
+  </div>
+</div>
+{% endblock %}

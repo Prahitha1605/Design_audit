@@ -1,0 +1,37 @@
+{
+  "scan_id": "be671e0d-27c8-4261-8162-71fc42ccf7a5",
+  "timestamp": "2026-06-07T05:27:26.875343Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-50\\test_accessibility_regression_0\\a.png",
+  "current_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-50\\test_accessibility_regression_0\\b.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "D001",
+      "location": "body text",
+      "what_changed": "Visual difference detected",
+      "direction": "regression",
+      "severity": "medium",
+      "reasoning": "contrast ratio lowered",
+      "ux_impact": "unreadable",
+      "is_accessibility_regression": true,
+      "confidence": 85,
+      "before_color": null,
+      "after_color": null,
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 100.0,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 100
+      }
+    }
+  ],
+  "verdict": "net_regression",
+  "accessibility_regressions": 1,
+  "summary": "contrast issue",
+  "scan_duration_ms": 4
+}

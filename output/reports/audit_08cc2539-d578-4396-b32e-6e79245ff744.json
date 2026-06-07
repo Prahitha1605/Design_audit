@@ -1,0 +1,13 @@
+{
+  "scan_id": "08cc2539-d578-4396-b32e-6e79245ff744",
+  "timestamp": "2026-06-07T04:14:55.367711Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\scan\\catalogue_category_books_mystery_3_index_audit_57fa42e3.png",
+  "model_used": "gemini",
+  "findings": [],
+  "summary": "Found 0 findings.",
+  "total_findings": 0,
+  "critical_count": 0,
+  "scan_duration_ms": 33068,
+  "warning": "fewer_than_3_findings",
+  "low_confidence": null
+}

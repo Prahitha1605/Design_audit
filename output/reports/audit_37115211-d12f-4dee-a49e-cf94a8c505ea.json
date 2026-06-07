@@ -1,0 +1,47 @@
+{
+  "scan_id": "37115211-d12f-4dee-a49e-cf94a8c505ea",
+  "timestamp": "2026-06-07T09:24:44.530418Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\scan\\catalogue_category_books_travel_2_index_audit_011b3bed.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Header brand title 'Books to Scrape' and blue text links (e.g., category list and book titles)",
+      "issue": "The primary blue text color (approximately #337ab7) on a white background fails WCAG AA 4.5:1 contrast requirements for normal text, measuring at approximately 3.4:1.",
+      "user_impact": "Users with low vision or color vision deficiencies, as well as users in high-glare outdoor environments, will find it difficult to read navigation categories, product titles, and the main site brand.",
+      "recommendation": "Replace the primary blue color with a darker shade such as #225c87 or #1b517e, ensuring a minimum contrast ratio of 4.5:1 against the white background.",
+      "confidence": 95,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F002",
+      "principle": "Visual Hierarchy",
+      "severity": "medium",
+      "location": "Product grid book titles (e.g., 'Full Moon over Noah\\'s ...', 'Neither Here nor There: ...')",
+      "issue": "Book titles are aggressively truncated with ellipsis (...) after a very short character count to enforce single-line alignment.",
+      "user_impact": "Shoppers cannot read full book titles from the catalog view, which increases interaction cost as they must hover or click each detail page to see what the book actually is.",
+      "recommendation": "Allow titles to wrap up to 2 lines. Use CSS Grid or Flexbox alignment ('align-items: stretch' and 'margin-top: auto' on the buttons) to ensure 'Add to basket' buttons remain perfectly aligned horizontally across rows regardless of title length.",
+      "confidence": 90,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F003",
+      "principle": "Spacing",
+      "severity": "medium",
+      "location": "Left-hand sidebar 'Books' category list",
+      "issue": "A flat list of over 40 book categories is presented with extremely tight vertical spacing and no grouping, creating a dense 'wall of text'.",
+      "user_impact": "High cognitive load makes it extremely tedious and frustrating for users to scan, find, or filter by specific genres.",
+      "recommendation": "Group the genres into collapsible parent categories (e.g., 'Fiction', 'Non-Fiction', 'Academic') and increase the vertical padding of list items to at least 8px to improve scan-ability and touch-target sizes.",
+      "confidence": 88,
+      "visibility_status": "visible"
+    }
+  ],
+  "summary": "Found 3 valid findings.",
+  "total_findings": 3,
+  "critical_count": 0,
+  "scan_duration_ms": 17404,
+  "warning": null,
+  "low_confidence": null
+}

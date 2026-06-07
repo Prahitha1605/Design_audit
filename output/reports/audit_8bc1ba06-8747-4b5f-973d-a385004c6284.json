@@ -1,0 +1,47 @@
+{
+  "scan_id": "8bc1ba06-8747-4b5f-973d-a385004c6284",
+  "timestamp": "2026-06-07T07:01:33.668376Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\scan\\design_audit_audit_1d67c189.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Visibility of System Status & Recognition",
+      "severity": "high",
+      "location": "Product Grid Item Titles",
+      "issue": "Book titles are truncated aggressively with ellipses (e.g., 'A Light in the ...', 'Sapiens: A Brief History ...'), hiding essential bibliographic information.",
+      "user_impact": "Users cannot identify the full titles of the books directly from the browsing grid, forcing them to click on individual items or guess, which increases cognitive friction.",
+      "recommendation": "A static screenshot does not provide enough visible evidence to make a concrete recommendation about this interaction state.",
+      "confidence": 95,
+      "visibility_status": "not_observable"
+    },
+    {
+      "id": "F002",
+      "principle": "Flexibility and Efficiency of Use",
+      "severity": "medium",
+      "location": "Left Sidebar Category Navigation List",
+      "issue": "The sidebar contains a long, flat list of over 50 book categories with small font size, tight line spacing, and no logical grouping or search mechanism.",
+      "user_impact": "Users suffer from decision paralysis and must scroll through a tedious list to find specific genres, leading to an inefficient browsing experience.",
+      "recommendation": "Group categories into logical parent headers (e.g., Fiction, Non-Fiction, Academic) or add a simple, real-time text filter input at the top of the sidebar list.",
+      "confidence": 90,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F003",
+      "principle": "Aesthetic and Minimalist Design",
+      "severity": "critical",
+      "location": "Product Card Rating Stars",
+      "issue": "The star rating indicators utilize very low-contrast colors, with pale yellow representing filled stars and light gray representing empty stars against a white background.",
+      "user_impact": "Low-vision users or individuals viewing the site on low-brightness displays will struggle to differentiate between the ratings, making the visual data inaccessible.",
+      "recommendation": "Increase the contrast of the active stars using a darker yellow or amber color (#D97706 or similar) and ensure the inactive stars have a distinct, darker gray outline.",
+      "confidence": 88,
+      "visibility_status": "visible"
+    }
+  ],
+  "summary": "Found 3 valid findings.",
+  "total_findings": 3,
+  "critical_count": 1,
+  "scan_duration_ms": 39205,
+  "warning": null,
+  "low_confidence": null
+}

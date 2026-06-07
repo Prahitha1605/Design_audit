@@ -1,0 +1,23 @@
+{
+  "scan_id": "ec70aa85-995d-4abf-aa7c-67a0bddb635e",
+  "timestamp": "2026-06-07T04:32:49.243572Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-44\\test_grok_compare_uses_two_ima0\\a.png",
+  "current_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-44\\test_grok_compare_uses_two_ima0\\b.png",
+  "model_used": "grok",
+  "differences": [
+    {
+      "id": "D001",
+      "location": "hero",
+      "what_changed": "Visual difference detected",
+      "direction": "neutral",
+      "reasoning": "minor change",
+      "ux_impact": "low",
+      "is_accessibility_regression": false,
+      "confidence": 80
+    }
+  ],
+  "verdict": "neutral",
+  "accessibility_regressions": 0,
+  "summary": "ok",
+  "scan_duration_ms": 1
+}

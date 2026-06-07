@@ -1,0 +1,63 @@
+{
+  "scan_id": "9e61d1cb-5336-4fe6-a044-9894c7f16f47",
+  "timestamp": "2026-06-06T18:35:43.988554Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\screenshot.png",
+  "current_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\image.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "diff_01",
+      "location": "Header and Breadcrumbs",
+      "what_changed": "Visual difference detected",
+      "direction": "neutral",
+      "reasoning": "",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": false,
+      "confidence": 75
+    },
+    {
+      "id": "diff_02",
+      "location": "Sidebar Navigation",
+      "what_changed": "Visual difference detected",
+      "direction": "neutral",
+      "reasoning": "",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": false,
+      "confidence": 75
+    },
+    {
+      "id": "diff_03",
+      "location": "First Row Book Content",
+      "what_changed": "Visual difference detected",
+      "direction": "neutral",
+      "reasoning": "",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": false,
+      "confidence": 75
+    },
+    {
+      "id": "diff_04",
+      "location": "Second Row Book Content",
+      "what_changed": "Visual difference detected",
+      "direction": "neutral",
+      "reasoning": "",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": false,
+      "confidence": 75
+    },
+    {
+      "id": "diff_05",
+      "location": "Pagination Controls",
+      "what_changed": "Visual difference detected",
+      "direction": "neutral",
+      "reasoning": "",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": false,
+      "confidence": 75
+    }
+  ],
+  "verdict": "neutral",
+  "accessibility_regressions": 0,
+  "summary": "Found 5 differences.",
+  "scan_duration_ms": 10752
+}

@@ -1,0 +1,51 @@
+{
+  "scan_id": "f29dfcb2-a168-4293-a3fb-748e8893327f",
+  "timestamp": "2026-06-07T06:18:07.086129Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\baseline_cf69918a8e014d8988cee39e634f8071_before.png",
+  "current_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\current_ff7787088ae242a0863a4625ad1326d1_after.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "region_1",
+      "location": "Page region",
+      "what_changed": "Visible region changed between baseline and current screenshots.",
+      "direction": "regression",
+      "severity": "medium",
+      "reasoning": "Visible region changed between baseline and current screenshots. Contrast changed from 17.94 to 8.79. Region contains 28.0% pixel difference. Color shifted from #c2c9d1 to #cad1f0.",
+      "ux_impact": "Reduced contrast makes content harder to read for low-vision users and weakens visual hierarchy.",
+      "is_accessibility_regression": true,
+      "confidence": 75,
+      "before_color": "#c2c9d1",
+      "after_color": "#cad1f0",
+      "contrast_before": 17.94,
+      "contrast_after": 8.79,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 28.0,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 468,
+        "height": 621
+      }
+    }
+  ],
+  "verdict": "net_regression",
+  "accessibility_regressions": 1,
+  "summary": "Detected 1 region(s): 1 regressions, 0 improvements, 0 neutral. Accessibility regressions detected in 1 region(s). Regressions outweigh improvements.",
+  "scan_duration_ms": 14451,
+  "baseline_size": [
+    491,
+    621
+  ],
+  "current_size": [
+    492,
+    607
+  ],
+  "pixel_diff_pct": null,
+  "diff_pixels": null,
+  "diff_bbox": null,
+  "diff_overlay_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\compare_overlay_806a7e61308441e79ce0188397d4d7ef.png",
+  "baseline_crop_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\baseline_crop_49380c5f4526445b842d0d773180e80e.png",
+  "current_crop_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\current_crop_ac80206f9f8f44c58555cd3e394f7f31.png"
+}

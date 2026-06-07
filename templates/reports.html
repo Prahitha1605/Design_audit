@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Reports — Design Audit Agent{% endblock %}
+
+{% block content %}
+<div class="reports-page">
+  <div class="reports-header">
+    <h1 class="rh-title">Reports</h1>
+    <span class="rh-count">{{ reports | length }} saved</span>
+  </div>
+
+  {% if reports %}
+  <div class="reports-list">
+    {% for report in reports %}
+    <a href="{{ url_for('report_file', filename=report.name) }}" target="_blank" class="report-row">
+      <div class="rr-icon">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+        </svg>
+      </div>
+      <span class="rr-name">{{ report.name }}</span>
+      <span class="rr-ext">JSON</span>
+      <svg class="rr-arrow" width="14" height="14" viewBox="0 0 16 16" fill="none">
+        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+    {% endfor %}
+  </div>
+  {% else %}
+  <div class="empty-state">
+    <div class="empty-icon">⬡</div>
+    <p>No saved reports yet.<br/>Run an audit to generate one.</p>
+    <a href="/" class="btn-run" style="text-decoration:none; display:inline-flex;">Go to Dashboard →</a>
+  </div>
+  {% endif %}
+</div>
+{% endblock %}

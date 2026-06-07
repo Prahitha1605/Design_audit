@@ -1,0 +1,33 @@
+{
+  "scan_id": "e8c1ffb2-bf3b-4985-97f1-c35230894cb2",
+  "timestamp": "2026-06-06T18:22:31.750494Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-14\\test_gemini_screenshot_compari0\\a.png",
+  "current_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-14\\test_gemini_screenshot_compari0\\b.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "1",
+      "location": "Header navigation",
+      "what_changed": "Header drops by 8px and pushes navigation layout.",
+      "direction": "neutral",
+      "reasoning": "Header drops by 8px and pushes navigation layout.",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": false,
+      "confidence": 75
+    },
+    {
+      "id": "2",
+      "location": "Sidebar links",
+      "what_changed": "Link contrast falls below WCAG AA.",
+      "direction": "neutral",
+      "reasoning": "Link contrast falls below WCAG AA.",
+      "ux_impact": "Likely a significant usability regression.",
+      "is_accessibility_regression": false,
+      "confidence": 90
+    }
+  ],
+  "verdict": "neutral",
+  "accessibility_regressions": 0,
+  "summary": "Found 2 differences.",
+  "scan_duration_ms": 0
+}

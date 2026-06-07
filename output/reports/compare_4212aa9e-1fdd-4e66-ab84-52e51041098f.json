@@ -1,0 +1,12 @@
+{
+  "scan_id": "4212aa9e-1fdd-4e66-ab84-52e51041098f",
+  "timestamp": "2026-06-06T18:21:23.009699Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\screenshot.png",
+  "current_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\screenshot.png",
+  "model_used": "gemini",
+  "differences": [],
+  "verdict": "neutral",
+  "accessibility_regressions": 0,
+  "summary": "Found 0 differences.",
+  "scan_duration_ms": 11265
+}

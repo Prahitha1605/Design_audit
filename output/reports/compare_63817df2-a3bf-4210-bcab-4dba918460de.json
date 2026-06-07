@@ -1,0 +1,133 @@
+{
+  "scan_id": "63817df2-a3bf-4210-bcab-4dba918460de",
+  "timestamp": "2026-06-07T05:27:18.616252Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-49\\test_verdict_produced0\\a.png",
+  "current_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-49\\test_verdict_produced0\\b.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "D001",
+      "location": "hero",
+      "what_changed": "Visual difference detected",
+      "direction": "neutral",
+      "severity": "medium",
+      "reasoning": "minor color shift",
+      "ux_impact": "low",
+      "is_accessibility_regression": false,
+      "confidence": 80,
+      "before_color": null,
+      "after_color": null,
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 100.0,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 100
+      }
+    },
+    {
+      "id": "D001",
+      "location": "hero",
+      "what_changed": "Visual difference detected",
+      "direction": "neutral",
+      "severity": "medium",
+      "reasoning": "minor color shift",
+      "ux_impact": "low",
+      "is_accessibility_regression": false,
+      "confidence": 80,
+      "before_color": null,
+      "after_color": null,
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 100.0,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 100
+      }
+    },
+    {
+      "id": "D001",
+      "location": "hero",
+      "what_changed": "Visual difference detected",
+      "direction": "neutral",
+      "severity": "medium",
+      "reasoning": "minor color shift",
+      "ux_impact": "low",
+      "is_accessibility_regression": false,
+      "confidence": 80,
+      "before_color": null,
+      "after_color": null,
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 100.0,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 100
+      }
+    },
+    {
+      "id": "D001",
+      "location": "hero",
+      "what_changed": "Visual difference detected",
+      "direction": "neutral",
+      "severity": "medium",
+      "reasoning": "minor color shift",
+      "ux_impact": "low",
+      "is_accessibility_regression": false,
+      "confidence": 80,
+      "before_color": null,
+      "after_color": null,
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 100.0,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 100
+      }
+    },
+    {
+      "id": "D001",
+      "location": "hero",
+      "what_changed": "Visual difference detected",
+      "direction": "neutral",
+      "severity": "medium",
+      "reasoning": "minor color shift",
+      "ux_impact": "low",
+      "is_accessibility_regression": false,
+      "confidence": 80,
+      "before_color": null,
+      "after_color": null,
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 100.0,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 100
+      }
+    }
+  ],
+  "verdict": "net_improvement",
+  "accessibility_regressions": 0,
+  "summary": "ok",
+  "scan_duration_ms": 21
+}

@@ -1,0 +1,44 @@
+{
+  "scan_id": "2d97e4ef-5c95-4430-bd66-13c793d5a5c1",
+  "timestamp": "2026-06-07T06:57:20.800558Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\scan\\design_audit_audit_a251cc4e.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Star rating indicators below each product image",
+      "issue": "The light yellow/gold used for the filled star ratings and the very light grey for empty stars both have extremely poor contrast against the white background, violating WCAG AA (minimum 4.5:1 for normal text/graphics).",
+      "user_impact": "Users with moderate visual impairments or those viewing the screen in high-glare environments will find it nearly impossible to distinguish the book ratings.",
+      "recommendation": "Change the color of the active yellow stars to a darker, high-contrast amber/orange hue (e.g., #C2410C or #D97706) and use a darker grey outline for the inactive stars.",
+      "confidence": 95
+    },
+    {
+      "id": "F002",
+      "principle": "Contrast",
+      "severity": "medium",
+      "location": "Breadcrumbs bar ('Home / All products') at the top of the main content area",
+      "issue": "The light grey text for 'Home' and '/ All products' against the very light grey background box does not meet the WCAG AA 4.5:1 contrast ratio threshold.",
+      "user_impact": "Reduces navigational usability, making it difficult for users to quickly identify their current location in the site hierarchy.",
+      "recommendation": "Increase the text contrast by changing the font color of the breadcrumb links to a darker shade of grey (such as #4B5563 or #2D3748) against the light grey background block.",
+      "confidence": 90
+    },
+    {
+      "id": "F003",
+      "principle": "Visual Hierarchy",
+      "severity": "high",
+      "location": "Product title links in the main catalog grid",
+      "issue": "Book titles are severely truncated with trailing ellipses (e.g., 'A Light in the ...', 'Sapiens: A Brief History ...', 'The Dirty Little Secrets ...') even when there is ample vertical space below them, prioritizing a rigid single-line layout over content readability.",
+      "user_impact": "Users cannot scan or identify the actual titles of the books without hovering or clicking through to each individual detail page, drastically degrading catalog usability.",
+      "recommendation": "Allow product titles to wrap to a maximum of two lines with a defined container height, ensuring complete or near-complete titles are readable directly in the grid.",
+      "confidence": 95
+    }
+  ],
+  "summary": "Found 3 valid findings.",
+  "total_findings": 3,
+  "critical_count": 0,
+  "scan_duration_ms": 15315,
+  "warning": null,
+  "low_confidence": null
+}

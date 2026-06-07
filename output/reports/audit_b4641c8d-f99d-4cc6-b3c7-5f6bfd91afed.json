@@ -1,0 +1,54 @@
+{
+  "scan_id": "b4641c8d-f99d-4cc6-b3c7-5f6bfd91afed",
+  "timestamp": "2026-06-07T04:43:02.831981Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\level1_c400e79fa9f74a878f657e3cd40c9651_image.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Product price labels (e.g., '\u00a317.46', '\u00a323.88') and 'In stock' availability text",
+      "issue": "The bright green color used for the price and stock status text has insufficient contrast against the white background, falling below the WCAG AA requirement of 4.5:1.",
+      "user_impact": "Users with moderate visual impairments or those viewing the site on low-contrast screens will struggle to read price and availability information.",
+      "recommendation": "Change the text color to a darker green (e.g., #2b701a) to achieve a contrast ratio of at least 4.5:1 against the white background.",
+      "confidence": 95
+    },
+    {
+      "id": "F002",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Product title links (e.g., 'Set Me Free', 'Olio', 'Libertarianism for Beginners')",
+      "issue": "The light blue color of the product title links has an estimated contrast ratio of 2.7:1 against the white background, which fails the WCAG AA minimum contrast requirement of 4.5:1.",
+      "user_impact": "Visually impaired users will have difficulty identifying and reading the names of the books in the store grid.",
+      "recommendation": "Darken the link text color to a compliant shade of blue (e.g., #1a5c96) that meets the 4.5:1 contrast ratio requirement.",
+      "confidence": 95
+    },
+    {
+      "id": "F003",
+      "principle": "Consistency",
+      "severity": "medium",
+      "location": "'Add to basket' button for 'Scott Pilgrim's Precious Little...' (Row 1, Column 2)",
+      "issue": "The background color of this button is a darker shade of blue than all other active 'Add to basket' buttons on the page, creating an unexplained inconsistency in the interface.",
+      "user_impact": "Users might be confused about whether this product is in a different state (e.g., selected or hovered) compared to the others, leading to interface uncertainty.",
+      "recommendation": "Ensure all standard product buttons use the identical blue color token (e.g., #428bca) to maintain consistency across the catalog grid.",
+      "confidence": 98
+    },
+    {
+      "id": "F004",
+      "principle": "Consistency",
+      "severity": "medium",
+      "location": "Truncated product titles (e.g., 'Scott Pilgrim's Precious Little...', 'Mesaerion: The Best Science...')",
+      "issue": "The text truncation logic wraps the trailing ellipsis ('...') onto a new line on its own, which looks broken and inconsistent with standard text truncation patterns.",
+      "user_impact": "It degrades the aesthetic professionalism of the catalog grid and makes the UI look unpolished.",
+      "recommendation": "Apply CSS properties like `overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;` to handle multi-line truncation gracefully without wrapping the ellipsis alone.",
+      "confidence": 90
+    }
+  ],
+  "summary": "Found 4 valid findings.",
+  "total_findings": 4,
+  "critical_count": 0,
+  "scan_duration_ms": 21528,
+  "warning": null,
+  "low_confidence": null
+}

@@ -1,0 +1,147 @@
+{
+  "scan_id": "4e04d667-eab1-4f6d-b61b-4905e42de82d",
+  "timestamp": "2026-06-07T08:33:55.715448Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\baseline_e48093fbf4864da48af4f97700917665_before.png",
+  "current_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\current_54f26815a5174b48bc05e353a76e407f_after.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "sidebar_theme",
+      "location": "Sidebar Container",
+      "what_changed": "Sidebar background color changed from solid dark navy to a vibrant blue-purple gradient.",
+      "direction": "neutral",
+      "severity": "medium",
+      "reasoning": "Sidebar background color changed from solid dark navy to a vibrant blue-purple gradient. Contrast changed from 20.82 to 20.82. Color shifted from #59626d to #68739b.",
+      "ux_impact": "This differs from the baseline but does not appear to be a strong regression.",
+      "is_accessibility_regression": false,
+      "confidence": 55,
+      "before_color": "#021e43",
+      "after_color": "#4d69ff",
+      "contrast_before": 20.82,
+      "contrast_after": 20.82,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": {
+        "x": 10,
+        "y": 10,
+        "width": 210,
+        "height": 940
+      }
+    },
+    {
+      "id": "user_profile_avatar",
+      "location": "User Profile Menu",
+      "what_changed": "Generic 'JD' initials badge replaced with a photographic user avatar image.",
+      "direction": "improvement",
+      "severity": "medium",
+      "reasoning": "Generic 'JD' initials badge replaced with a photographic user avatar image.",
+      "ux_impact": "Visual presentation appears more refined in the current screenshot.",
+      "is_accessibility_regression": false,
+      "confidence": 70,
+      "before_color": "#000000",
+      "after_color": "#000000",
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": {
+        "x": 810,
+        "y": 15,
+        "width": 155,
+        "height": 45
+      }
+    },
+    {
+      "id": "chart_active_state",
+      "location": "Sales Overview Chart",
+      "what_changed": "Line chart color updated from blue to purple with an added interactive data tooltip.",
+      "direction": "improvement",
+      "severity": "medium",
+      "reasoning": "Line chart color updated from blue to purple with an added interactive data tooltip. Contrast changed from 20.82 to 20.82. Color shifted from #525353 to #535353.",
+      "ux_impact": "This change improves readability or visual clarity compared to the baseline.",
+      "is_accessibility_regression": false,
+      "confidence": 70,
+      "before_color": "#1e70eb",
+      "after_color": "#7b61ff",
+      "contrast_before": 20.82,
+      "contrast_after": 20.82,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": {
+        "x": 260,
+        "y": 355,
+        "width": 690,
+        "height": 230
+      }
+    },
+    {
+      "id": "table_customer_avatars",
+      "location": "Recent Transactions Table",
+      "what_changed": "Small customer avatar images introduced adjacent to the name list.",
+      "direction": "improvement",
+      "severity": "medium",
+      "reasoning": "Small customer avatar images introduced adjacent to the name list.",
+      "ux_impact": "Visual presentation appears more refined in the current screenshot.",
+      "is_accessibility_regression": false,
+      "confidence": 70,
+      "before_color": "#000000",
+      "after_color": "#000000",
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": {
+        "x": 345,
+        "y": 720,
+        "width": 35,
+        "height": 180
+      }
+    },
+    {
+      "id": "header_utility_items",
+      "location": "Header Controls",
+      "what_changed": "Added a sun icon for light/dark mode and a red status badge on the notification bell.",
+      "direction": "improvement",
+      "severity": "medium",
+      "reasoning": "Added a sun icon for light/dark mode and a red status badge on the notification bell.",
+      "ux_impact": "Visual presentation appears more refined in the current screenshot.",
+      "is_accessibility_regression": false,
+      "confidence": 70,
+      "before_color": "#000000",
+      "after_color": "#000000",
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": {
+        "x": 735,
+        "y": 15,
+        "width": 70,
+        "height": 40
+      }
+    }
+  ],
+  "verdict": "net_improvement",
+  "accessibility_regressions": 0,
+  "summary": "Detected 5 region(s): 0 regressions, 4 improvements, 1 neutral. Improvements outweigh regressions.",
+  "scan_duration_ms": 13974,
+  "baseline_size": [
+    491,
+    621
+  ],
+  "current_size": [
+    492,
+    607
+  ],
+  "pixel_diff_pct": null,
+  "diff_pixels": null,
+  "diff_bbox": null,
+  "diff_overlay_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\compare_overlay_871fbbeb3c53427892beb8f1d418591c.png",
+  "baseline_crop_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\baseline_crop_4913abba9a484bd2968c0dad8d96e4c8.png",
+  "current_crop_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\current_crop_bf8098ffe9a046eaa649787443600a73.png"
+}

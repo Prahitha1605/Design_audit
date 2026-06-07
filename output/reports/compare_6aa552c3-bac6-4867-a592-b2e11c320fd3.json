@@ -1,0 +1,63 @@
+{
+  "scan_id": "6aa552c3-bac6-4867-a592-b2e11c320fd3",
+  "timestamp": "2026-06-06T18:24:05.934472Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\screenshot.png",
+  "current_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\screenshot.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "diff_1",
+      "location": "Sidebar Category List",
+      "what_changed": "Spacing compressed between category items. Bullet styling uses unstyled browser defaults.",
+      "direction": "regression",
+      "reasoning": "Spacing compressed between category items. Bullet styling uses unstyled browser defaults.",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": true,
+      "confidence": 75
+    },
+    {
+      "id": "diff_2",
+      "location": "Warning Alert Banner",
+      "what_changed": "Reduced contrast ratio between text (#8a6d3b) and banner background (#fcf8e3).",
+      "direction": "regression",
+      "reasoning": "Reduced contrast ratio between text (#8a6d3b) and banner background (#fcf8e3).",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": true,
+      "confidence": 75
+    },
+    {
+      "id": "diff_3",
+      "location": "Star Rating Icons",
+      "what_changed": "Inactive stars display insufficient contrast against the background.",
+      "direction": "regression",
+      "reasoning": "Inactive stars display insufficient contrast against the background.",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": true,
+      "confidence": 75
+    },
+    {
+      "id": "diff_4",
+      "location": "Book Title Typography",
+      "what_changed": "Truncation applied to product title, limiting full readability.",
+      "direction": "neutral",
+      "reasoning": "Truncation applied to product title, limiting full readability.",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": false,
+      "confidence": 75
+    },
+    {
+      "id": "diff_5",
+      "location": "Price Tag Display",
+      "what_changed": "Font size reduction of price elements impairs readability.",
+      "direction": "regression",
+      "reasoning": "Font size reduction of price elements impairs readability.",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": true,
+      "confidence": 75
+    }
+  ],
+  "verdict": "net_regression",
+  "accessibility_regressions": 4,
+  "summary": "Found 5 differences.",
+  "scan_duration_ms": 12257
+}

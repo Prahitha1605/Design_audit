@@ -1,0 +1,75 @@
+{
+  "scan_id": "e76b1626-e834-42ad-9bd4-69d22841f283",
+  "timestamp": "2026-06-07T06:31:21.182027Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-63\\test_accessibility_regression_0\\a.png",
+  "current_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-63\\test_accessibility_regression_0\\b.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "D001",
+      "location": "body text",
+      "what_changed": "Color changed from #ffffff to #0a0a0a in the affected region.",
+      "direction": "regression",
+      "severity": "medium",
+      "reasoning": "contrast ratio lowered",
+      "ux_impact": "unreadable",
+      "is_accessibility_regression": true,
+      "confidence": 85,
+      "before_color": "#ffffff",
+      "after_color": "#0a0a0a",
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 100.0,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 100
+      }
+    },
+    {
+      "id": "region_002",
+      "location": "Page region",
+      "what_changed": "Visible UI component changed between baseline and current screenshots.",
+      "direction": "regression",
+      "severity": "medium",
+      "reasoning": "Visible UI component changed between baseline and current screenshots. Region contains 100.0% pixel difference. Color shifted from #ffffff to #0a0a0a.",
+      "ux_impact": "A visible layout change may disrupt user flow and confuse returning users.",
+      "is_accessibility_regression": false,
+      "confidence": 100,
+      "before_color": "#ffffff",
+      "after_color": "#0a0a0a",
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 100.0,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 100
+      }
+    }
+  ],
+  "verdict": "net_regression",
+  "accessibility_regressions": 1,
+  "summary": "contrast issue",
+  "scan_duration_ms": 85,
+  "baseline_size": [
+    100,
+    100
+  ],
+  "current_size": [
+    100,
+    100
+  ],
+  "pixel_diff_pct": null,
+  "diff_pixels": null,
+  "diff_bbox": null,
+  "diff_overlay_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\compare_overlay_c3726939aad0402e9ad291844acfadaf.png",
+  "baseline_crop_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\baseline_crop_19cce20cb7b24ed2ac599248ba9e31f4.png",
+  "current_crop_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\current_crop_82767f2987e4408b9bc188fa3251e295.png"
+}

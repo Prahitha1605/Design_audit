@@ -1,0 +1,23 @@
+{
+  "scan_id": "dcbf58d4-2f88-465e-a3b5-22c4397465b2",
+  "timestamp": "2026-06-06T17:38:38.764283Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-7\\test_accessibility_regression_0\\a.png",
+  "current_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-7\\test_accessibility_regression_0\\b.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "D001",
+      "location": "body text",
+      "what_changed": "contrast drop",
+      "direction": "regression",
+      "reasoning": "contrast ratio lowered",
+      "ux_impact": "unreadable",
+      "is_accessibility_regression": true,
+      "confidence": 85
+    }
+  ],
+  "verdict": "net_regression",
+  "accessibility_regressions": 1,
+  "summary": "contrast issue",
+  "scan_duration_ms": 0
+}

@@ -1,0 +1,58 @@
+{
+  "scan_id": "ecdc8049-5dda-4060-88a5-3857a2012225",
+  "timestamp": "2026-06-07T07:02:33.794735Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\scan\\catalogue_category_books_mystery_3_index_audit_a19aae8d.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Breadcrumb navigation links (Home / Books / Mystery)",
+      "issue": "The light blue link text ('Home', 'Books') and the grey active text ('Mystery') on the light grey background container (#f5f5f5) do not meet the WCAG AA minimum contrast ratio of 4.5:1 for normal body text.",
+      "user_impact": "Users with moderate visual impairments or those viewing the screen in high-glare environments will struggle to read the breadcrumb trail, hindering orientation and navigation.",
+      "recommendation": "Change the breadcrumb link color to a darker blue (e.g., #025aa5) and the active item text to a darker grey (e.g., #555555) to ensure a contrast ratio of at least 4.5:1 against the light grey background.",
+      "confidence": 92,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F002",
+      "principle": "Consistency",
+      "severity": "medium",
+      "location": "Sidebar category list (Active state of 'Mystery')",
+      "issue": "The active category 'Mystery' is styled with a bullet point/marker on its left, which indents its text and breaks the vertical alignment compared to all other non-active categories in the list.",
+      "user_impact": "Disrupts visual scanning of the left sidebar list, making the interface look unpolished and misaligned.",
+      "recommendation": "Remove the list-style bullet marker from the active list item. Instead, indicate the active state using a bold font weight, a different text color, or a subtle background highlight while keeping the text left-aligned with the rest of the list.",
+      "confidence": 95,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F003",
+      "principle": "Visual Hierarchy",
+      "severity": "high",
+      "location": "Book product grid titles",
+      "issue": "Book titles are aggressively truncated with an ellipsis ('...') to fit on a single line, hiding key product information.",
+      "user_impact": "Users cannot read the full titles of the books without clicking into individual product pages, increasing friction and making comparison shopping difficult.",
+      "recommendation": "Allow titles to wrap up to 2 lines of text. Set a min-height on the title container to preserve grid alignment of the price, stock status, and 'Add to basket' buttons.",
+      "confidence": 98,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F004",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Star rating indicators on book cards",
+      "issue": "The empty/inactive stars are styled with an extremely light grey fill and border, providing virtually no contrast against the white background.",
+      "user_impact": "Users cannot easily distinguish between empty and filled stars, making it difficult to read the rating (e.g., telling a 1-star rating apart from a 5-star rating at a glance).",
+      "recommendation": "Apply a darker, high-contrast grey outline (e.g., #767676) to the inactive stars to ensure they are visible and clearly distinguishable from the yellow-filled active stars.",
+      "confidence": 95,
+      "visibility_status": "visible"
+    }
+  ],
+  "summary": "Found 4 valid findings.",
+  "total_findings": 4,
+  "critical_count": 0,
+  "scan_duration_ms": 31152,
+  "warning": null,
+  "low_confidence": null
+}

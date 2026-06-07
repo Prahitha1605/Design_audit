@@ -1,0 +1,47 @@
+{
+  "scan_id": "59e08f11-f689-4352-9d4a-0a15d7d4c569",
+  "timestamp": "2026-06-07T08:14:43.785489Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\scan\\design_audit_audit_f56114cf.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Product title links (e.g., 'A Light in the ...') and left sidebar category links (e.g., 'Travel', 'Mystery')",
+      "issue": "The blue link text color (#2189cf) on the white background and light grey sidebar background has a contrast ratio of approximately 3.75:1, failing the WCAG AA requirement of 4.5:1 for normal-sized text.",
+      "user_impact": "Users with low vision or those viewing the screen in bright ambient lighting conditions will experience eye strain or fail to easily read the book titles and category navigation links.",
+      "recommendation": "Update the primary link color to a darker blue shade, such as #1a6d9c, which guarantees a contrast ratio of at least 4.5:1 against both white (#ffffff) and light grey (#f5f5f5) surfaces.",
+      "confidence": 95,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F002",
+      "principle": "Consistency",
+      "severity": "medium",
+      "location": "Product card title text labels (e.g., 'Sapiens: A Brief History ...', 'Starving Hearts (Triangular Trade ...')",
+      "issue": "Book titles are prematurely truncated with ellipses to fit a single line, hiding essential name details and creating an inconsistent visual pattern where some titles are fully visible while others are chopped off.",
+      "user_impact": "Users cannot identify the full name of truncated book titles directly from the gallery page, forcing unnecessary clicks to product detail pages to read simple titles.",
+      "recommendation": "Remove strict single-line truncation. Allow titles to wrap naturally to a maximum of two lines, and use CSS line-clamping (e.g., '-webkit-line-clamp: 2') to truncate only when titles exceed that threshold.",
+      "confidence": 90,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F003",
+      "principle": "Alignment",
+      "severity": "medium",
+      "location": "Product grid card vertical elements (prices, stock status, and buttons across horizontal rows)",
+      "issue": "Because title text lengths vary between one and two lines, the content elements below them (prices and stock status badges) do not align to a uniform horizontal baseline across the row, disrupting the grid's visual rhythm.",
+      "user_impact": "The irregular vertical alignment of prices and buttons makes it visually fatiguing for users to scan prices and stock statuses consistently from left to right across the product grid.",
+      "recommendation": "Apply a fixed height to the title container (e.g., height: 40px) or restructure the product cards with a CSS Flexbox layout using 'margin-top: auto' on the price and action container elements to force them to align to identical baselines in every row.",
+      "confidence": 92,
+      "visibility_status": "visible"
+    }
+  ],
+  "summary": "Found 3 valid findings.",
+  "total_findings": 3,
+  "critical_count": 0,
+  "scan_duration_ms": 24861,
+  "warning": null,
+  "low_confidence": null
+}

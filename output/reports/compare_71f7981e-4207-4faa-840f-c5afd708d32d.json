@@ -1,0 +1,46 @@
+{
+  "scan_id": "71f7981e-4207-4faa-840f-c5afd708d32d",
+  "timestamp": "2026-06-07T06:31:40.463530Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-64\\test_gemini_suspension_falls_b0\\baseline.png",
+  "current_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-64\\test_gemini_suspension_falls_b0\\current.png",
+  "model_used": "grok",
+  "differences": [
+    {
+      "id": "diff_001",
+      "location": "page",
+      "what_changed": "No measurable visual difference detected.",
+      "direction": "neutral",
+      "severity": "info",
+      "reasoning": "Baseline and current screenshots are visually equivalent.",
+      "ux_impact": "No regression detected.",
+      "is_accessibility_regression": false,
+      "confidence": 95,
+      "before_color": null,
+      "after_color": null,
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 0.0,
+      "bbox": null
+    }
+  ],
+  "verdict": "neutral",
+  "accessibility_regressions": 0,
+  "summary": "Fallback to Grok.",
+  "scan_duration_ms": 32,
+  "baseline_size": [
+    100,
+    100
+  ],
+  "current_size": [
+    100,
+    100
+  ],
+  "pixel_diff_pct": null,
+  "diff_pixels": null,
+  "diff_bbox": null,
+  "diff_overlay_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\compare_overlay_772f6e31c4fc4f5b83b0c2a533698529.png",
+  "baseline_crop_path": null,
+  "current_crop_path": null
+}

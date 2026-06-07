@@ -1,0 +1,54 @@
+{
+  "scan_id": "b467acd7-96f6-4ab7-9984-f84ed2aa1f45",
+  "timestamp": "2026-06-07T04:14:18.872389Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\scan\\catalogue_category_books_travel_2_index_audit_fa36e7ba.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "finding-1",
+      "principle": "Contrast",
+      "severity": "critical",
+      "location": "Breadcrumb container menu ('Home / Books / Travel')",
+      "issue": "The breadcrumb trail ('Home / Books / Travel') features light-colored text on an off-white background (#F5F5F5), which falls significantly below the WCAG AA minimum contrast ratio of 4.5:1 for body and navigation text.",
+      "user_impact": "",
+      "recommendation": "Increase the contrast by changing the breadcrumb link and text colors to a darker grey (e.g., #4A4A4A or darker) to ensure legibility and accessibility compliance.",
+      "confidence": 75
+    },
+    {
+      "id": "finding-2",
+      "principle": "Contrast",
+      "severity": "critical",
+      "location": "Warning alert banner box at the top of the main content column",
+      "issue": "The body text inside the yellow warning banner ('Warning! This is a demo website for web scraping purposes...') uses a light brownish-yellow hue on a light yellow background, failing the 4.5:1 WCAG AA contrast threshold.",
+      "user_impact": "",
+      "recommendation": "Darken the alert text color to a deep bronze/brown (e.g., #6C521F) or a dark charcoal grey to satisfy contrast guidelines.",
+      "confidence": 75
+    },
+    {
+      "id": "finding-3",
+      "principle": "Visual Hierarchy",
+      "severity": "medium",
+      "location": "Book title link elements under star ratings",
+      "issue": "Product titles under the book cover thumbnails (e.g., 'Full Moon over Noah's ...' and 'See America: A Celebration ...') are aggressively truncated with ellipses, weakening the visual prominence of the primary product information.",
+      "user_impact": "",
+      "recommendation": "Remove premature truncation and allow book titles to wrap to a maximum of two lines. Slightly increase the font size of the titles relative to secondary metadata like stock status.",
+      "confidence": 75
+    },
+    {
+      "id": "finding-4",
+      "principle": "Spacing",
+      "severity": "medium",
+      "location": "Left sidebar vertical navigation menu",
+      "issue": "The category list items in the left-hand navigation sidebar have extremely dense vertical spacing, reducing scannability and violating comfortable tap target sizes for mobile or touch devices.",
+      "user_impact": "",
+      "recommendation": "Add vertical padding (minimum 8px to 12px) to each list item in the sidebar menu to increase the target area and overall breathing room.",
+      "confidence": 75
+    }
+  ],
+  "summary": "Found 4 findings.",
+  "total_findings": 4,
+  "critical_count": 2,
+  "scan_duration_ms": 18877,
+  "warning": null,
+  "low_confidence": null
+}

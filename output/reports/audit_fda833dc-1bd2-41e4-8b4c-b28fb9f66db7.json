@@ -1,0 +1,54 @@
+{
+  "scan_id": "fda833dc-1bd2-41e4-8b4c-b28fb9f66db7",
+  "timestamp": "2026-06-06T18:52:01.875805Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\level1_98cfdff58f03478594144d53a309b41c_Screenshot_2026-05-25_222335.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Contrast (WCAG AA 4.5:1)",
+      "severity": "critical",
+      "location": "Blue primary buttons (+ Add More, Enhance Resume, Change Layout)",
+      "issue": "The white text on the bright blue background (#007bff) of the action buttons does not meet the minimum WCAG AA contrast ratio of 4.5:1 for normal text.",
+      "user_impact": "",
+      "recommendation": "Darken the blue background color to at least #0056b3 or use darker text to ensure the contrast ratio meets or exceeds 4.5:1.",
+      "confidence": 75
+    },
+    {
+      "id": "F002",
+      "principle": "Alignment",
+      "severity": "high",
+      "location": "Delete ('x') buttons in Skills and Certifications sections",
+      "issue": "The delete ('x') buttons are positioned on a completely separate line below the inputs instead of being placed inline, resulting in a broken and confusing layout.",
+      "user_impact": "",
+      "recommendation": "Align each delete button horizontally on the right side of its corresponding input field to visually associate the action with the specific field.",
+      "confidence": 75
+    },
+    {
+      "id": "F003",
+      "principle": "Spacing",
+      "severity": "high",
+      "location": "Chatbot input field and send button",
+      "issue": "The circular send icon overlaps the text input field, causing typed text to run underneath the button and become unreadable.",
+      "user_impact": "",
+      "recommendation": "Increase the right padding of the text input area so that typed text wraps before hitting the send icon, or place the send icon outside the input field container.",
+      "confidence": 75
+    },
+    {
+      "id": "F004",
+      "principle": "Consistency",
+      "severity": "medium",
+      "location": "Experience section input",
+      "issue": "The 'Experience' input field does not feature a delete button, unlike the 'Skills' and 'Certifications' sections, creating functional inconsistency across repeating lists.",
+      "user_impact": "",
+      "recommendation": "Provide individual delete buttons consistently across all repeatable input fields across all form sections.",
+      "confidence": 75
+    }
+  ],
+  "summary": "Found 4 findings.",
+  "total_findings": 4,
+  "critical_count": 1,
+  "scan_duration_ms": 14698,
+  "warning": null,
+  "low_confidence": null
+}

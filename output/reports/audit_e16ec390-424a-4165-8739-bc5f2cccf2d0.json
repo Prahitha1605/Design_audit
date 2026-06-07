@@ -1,0 +1,54 @@
+{
+  "scan_id": "e16ec390-424a-4165-8739-bc5f2cccf2d0",
+  "timestamp": "2026-06-06T18:15:21.561667Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\screenshot.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "contrast-green-text",
+      "principle": "Contrast",
+      "severity": "critical",
+      "location": "Price text (e.g., '\u00a351.77') and 'In stock' status labels",
+      "issue": "",
+      "user_impact": "",
+      "recommendation": "Darken the green shade to at least `#2e7d32` or `#1b5e20` to ensure the contrast ratio against the white background is at least 4.5:1.",
+      "confidence": 75
+    },
+    {
+      "id": "contrast-breadcrumb",
+      "principle": "Contrast",
+      "severity": "critical",
+      "location": "Breadcrumb item 'All products'",
+      "issue": "",
+      "user_impact": "",
+      "recommendation": "Change the text color of the inactive breadcrumb item to a darker grey (such as `#595959` or `#767676`) to improve legibility.",
+      "confidence": 75
+    },
+    {
+      "id": "hierarchy-title-truncation",
+      "principle": "Visual Hierarchy",
+      "severity": "medium",
+      "location": "Product title links under book covers",
+      "issue": "",
+      "user_impact": "",
+      "recommendation": "Allow product titles to wrap to up to two lines before applying truncation, or use a consistent height container for the titles to maintain grid alignment.",
+      "confidence": 75
+    },
+    {
+      "id": "alignment-sidebar-bullets",
+      "principle": "Alignment",
+      "severity": "medium",
+      "location": "Sidebar category list items ('Travel', 'Mystery', etc.)",
+      "issue": "",
+      "user_impact": "",
+      "recommendation": "Set `list-style: none` on the sidebar `<ul>` element and use modern CSS padding to align the text cleanly. Optionally, replace the standard bullets with a subtle custom chevron icon or indent.",
+      "confidence": 75
+    }
+  ],
+  "summary": "Found 4 findings.",
+  "total_findings": 4,
+  "critical_count": 2,
+  "scan_duration_ms": 16390,
+  "warning": null,
+  "low_confidence": null
+}

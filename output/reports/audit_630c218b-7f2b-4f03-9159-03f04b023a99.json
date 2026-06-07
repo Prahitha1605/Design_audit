@@ -1,0 +1,24 @@
+{
+  "scan_id": "630c218b-7f2b-4f03-9159-03f04b023a99",
+  "timestamp": "2026-06-06T18:12:01.130388Z",
+  "image_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-11\\test_minimum_findings_enforced0\\min.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Spacing",
+      "severity": "low",
+      "location": "footer",
+      "issue": "Minor spacing",
+      "user_impact": "none",
+      "recommendation": "n/a",
+      "confidence": 20
+    }
+  ],
+  "summary": "one",
+  "total_findings": 1,
+  "critical_count": 0,
+  "scan_duration_ms": 3,
+  "warning": "fewer_than_3_findings",
+  "low_confidence": null
+}

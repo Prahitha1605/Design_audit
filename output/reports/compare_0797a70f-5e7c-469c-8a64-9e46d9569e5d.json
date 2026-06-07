@@ -1,0 +1,63 @@
+{
+  "scan_id": "0797a70f-5e7c-469c-8a64-9e46d9569e5d",
+  "timestamp": "2026-06-06T18:39:57.317193Z",
+  "baseline_path": "baseline.png",
+  "current_path": "current.png",
+  "model_used": "mock",
+  "differences": [
+    {
+      "id": "D001",
+      "location": "hero banner",
+      "what_changed": "Visual difference detected",
+      "direction": "improvement",
+      "reasoning": "higher contrast and clearer CTA",
+      "ux_impact": "easier to notice the action",
+      "is_accessibility_regression": false,
+      "confidence": 95
+    },
+    {
+      "id": "D002",
+      "location": "body text",
+      "what_changed": "Visual difference detected",
+      "direction": "regression",
+      "reasoning": "text size decreased for readability",
+      "ux_impact": "harder to read for some users",
+      "is_accessibility_regression": true,
+      "confidence": 90
+    },
+    {
+      "id": "D003",
+      "location": "sidebar spacing",
+      "what_changed": "Visual difference detected",
+      "direction": "regression",
+      "reasoning": "compressed layout increases cognitive load",
+      "ux_impact": "denser visual structure",
+      "is_accessibility_regression": true,
+      "confidence": 88
+    },
+    {
+      "id": "D004",
+      "location": "navigation links",
+      "what_changed": "Visual difference detected",
+      "direction": "improvement",
+      "reasoning": "links are easier to click",
+      "ux_impact": "better usability",
+      "is_accessibility_regression": false,
+      "confidence": 80
+    },
+    {
+      "id": "D005",
+      "location": "footer contrast",
+      "what_changed": "Visual difference detected",
+      "direction": "improvement",
+      "reasoning": "stronger contrast for secondary text",
+      "ux_impact": "easier scanning",
+      "is_accessibility_regression": false,
+      "confidence": 75
+    }
+  ],
+  "verdict": "net_regression",
+  "accessibility_regressions": 2,
+  "summary": "The current version has useful visual improvements but introduces accessibility regressions in text size and spacing.",
+  "scan_duration_ms": 491
+}

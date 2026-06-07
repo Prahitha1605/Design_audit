@@ -1,0 +1,47 @@
+{
+  "scan_id": "cbb54624-22a9-4445-8343-4f672c172c06",
+  "timestamp": "2026-06-07T07:01:55.963159Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\scan\\catalogue_category_books_travel_2_index_audit_a9937f87.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Alignment",
+      "severity": "medium",
+      "location": "Product Grid (Book Cards)",
+      "issue": "Varying title lengths (1 vs 2 lines) cause elements below the title (prices, stock status, and 'Add to basket' buttons) to vertically misalign across columns in the same row.",
+      "user_impact": "Disrupts horizontal scanning of prices and actions, making the page feel cluttered and unprofessional.",
+      "recommendation": "Apply a flexbox layout to the card container (`display: flex; flex-direction: column; height: 100%;`) and use `margin-top: auto;` on the bottom section containing the price, stock status, and button to force them to align perfectly to the bottom baseline.",
+      "confidence": 95,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F002",
+      "principle": "Spacing",
+      "severity": "medium",
+      "location": "Left Sidebar Category Menu",
+      "issue": "Extremely tight vertical padding and line-height on the long list of category links (over 50 items stacked tightly).",
+      "user_impact": "Increases the risk of mis-clicks (especially on touch devices) and makes scanning the list visually exhausting.",
+      "recommendation": "Increase the vertical padding of the sidebar list items (`padding: 6px 12px;` or `line-height: 1.6`) to provide adequate breathing room and target size.",
+      "confidence": 90,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F003",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Header Subtitle ('We love being scraped!')",
+      "issue": "The light grey subtitle text on the light blue-grey header background has insufficient contrast, falling below the WCAG AA 4.5:1 threshold.",
+      "user_impact": "Low-vision users or users in high-glare environments will struggle to read this brand subtitle.",
+      "recommendation": "Darken the subtitle text color to a darker grey (e.g., `#555555` or `#333333`) to guarantee a contrast ratio of at least 4.5:1 against the light background.",
+      "confidence": 85,
+      "visibility_status": "visible"
+    }
+  ],
+  "summary": "Found 3 valid findings.",
+  "total_findings": 3,
+  "critical_count": 0,
+  "scan_duration_ms": 18093,
+  "warning": null,
+  "low_confidence": null
+}

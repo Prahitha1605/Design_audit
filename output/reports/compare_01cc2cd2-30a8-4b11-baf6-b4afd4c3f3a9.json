@@ -1,0 +1,51 @@
+{
+  "scan_id": "01cc2cd2-30a8-4b11-baf6-b4afd4c3f3a9",
+  "timestamp": "2026-06-07T05:48:57.574996Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-53\\test_severity_and_evidence_fie0\\a.png",
+  "current_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-53\\test_severity_and_evidence_fie0\\b.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "D001",
+      "location": "hero",
+      "what_changed": "Color changed from #e5e5e5 to #d8d8d8 in the affected region.",
+      "direction": "regression",
+      "severity": "high",
+      "reasoning": "Color changed from #e5e5e5 to #d8d8d8 in the affected region. Contrast changed from 21.0 to 18.43. Region contains 0.0% pixel difference. Color shifted from #e5e5e5 to #d8d8d8.",
+      "ux_impact": "Reduced contrast makes content harder to read for low-vision users and weakens visual hierarchy.",
+      "is_accessibility_regression": true,
+      "confidence": 92,
+      "before_color": "#e5e5e5",
+      "after_color": "#d8d8d8",
+      "contrast_before": 21.0,
+      "contrast_after": 18.43,
+      "shift_x_px": null,
+      "shift_y_px": 18,
+      "pixel_diff_percentage": 0.0,
+      "bbox": {
+        "x": 10,
+        "y": 20,
+        "width": 100,
+        "height": 40
+      }
+    }
+  ],
+  "verdict": "net_regression",
+  "accessibility_regressions": 1,
+  "summary": "Contrast regression detected.",
+  "scan_duration_ms": 33,
+  "baseline_size": [
+    100,
+    100
+  ],
+  "current_size": [
+    100,
+    100
+  ],
+  "pixel_diff_pct": null,
+  "diff_pixels": null,
+  "diff_bbox": null,
+  "diff_overlay_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\compare_overlay_5a75e4d7b3b347cfa020e9c4523e0f69.png",
+  "baseline_crop_path": null,
+  "current_crop_path": null
+}

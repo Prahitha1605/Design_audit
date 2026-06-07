@@ -1,0 +1,47 @@
+{
+  "scan_id": "29d30345-ed80-4a4c-8df1-8f791162d074",
+  "timestamp": "2026-06-07T09:19:34.757697Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\level1_78ee7e2298eb4f44bb2065f7fdab56be_screenshot.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Product card price (e.g., '\u00a351.77') and availability status ('In stock') text",
+      "issue": "The bright green text color used for product prices and 'In stock' indicators on a solid white background fails to meet the WCAG AA 4.5:1 contrast ratio threshold for normal body text.",
+      "user_impact": "Users with low vision, color blindness, or those viewing the screen in high-ambient-light conditions will struggle to read essential transaction details like price and availability.",
+      "recommendation": "Change the green text color from its current bright shade to a darker green (e.g., #2b5e2d or #1e4620) to guarantee a minimum contrast ratio of 4.5:1 against the white background.",
+      "confidence": 95,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F002",
+      "principle": "Consistency",
+      "severity": "medium",
+      "location": "Left sidebar category navigation list",
+      "issue": "The list items in the vertical sidebar menu (e.g., 'Travel', 'Mystery', 'Historical Fiction') retain browser-default bullet points. Standard vertical sidebar menus should avoid list bullets as they add visual noise and look unpolished.",
+      "user_impact": "The default bullets clutter the list layout, disrupting clean left alignment and making the text harder to quickly scan.",
+      "recommendation": "Set 'list-style-type: none;' on the sidebar navigation list container 'ul' element, and adjust the padding-left of the 'li' elements to 10px-15px for clean, un-bulleted vertical alignment.",
+      "confidence": 90,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F003",
+      "principle": "Visual Hierarchy",
+      "severity": "medium",
+      "location": "Product titles below star ratings (e.g., 'A Light in the ...')",
+      "issue": "Book titles are prematurely truncated with an ellipsis ('...') on a single line, even though there is sufficient vertical space below them to wrap text without overlapping the price.",
+      "user_impact": "Users cannot read the full name of truncated books directly from the catalog grid, forcing them to guess or click through to the product page just to read the title.",
+      "recommendation": "Remove single-line truncation and allow titles to wrap to a maximum of two lines using 'display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;'. Set a fixed 'min-height: 40px' on the title wrapper to keep the grid cards vertically aligned.",
+      "confidence": 92,
+      "visibility_status": "visible"
+    }
+  ],
+  "summary": "Found 3 valid findings.",
+  "total_findings": 3,
+  "critical_count": 0,
+  "scan_duration_ms": 23165,
+  "warning": null,
+  "low_confidence": null
+}

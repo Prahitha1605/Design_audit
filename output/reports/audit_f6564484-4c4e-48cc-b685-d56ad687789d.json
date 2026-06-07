@@ -1,0 +1,58 @@
+{
+  "scan_id": "f6564484-4c4e-48cc-b685-d56ad687789d",
+  "timestamp": "2026-06-07T09:25:04.355334Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\scan\\catalogue_category_books_mystery_3_index_audit_62d1a547.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Header subtitle text ('We love being scraped!')",
+      "issue": "The light grey subtitle text has extremely low contrast against the white/light grey background, failing the WCAG AA 4.5:1 threshold for normal text.",
+      "user_impact": "Users with visual impairments or those viewing the site on lower-quality screens will find this branding/tagline text completely illegible.",
+      "recommendation": "Change the text color of the subtitle from light grey to a darker charcoal grey (e.g., #555555 or #4B5563) to ensure a contrast ratio of at least 4.5:1.",
+      "confidence": 98,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F002",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Breadcrumb navigation ('Home / Books /') at the top left",
+      "issue": "The light blue link text within the breadcrumb bar is placed against a light grey (#F5F5F5) background, which results in insufficient visual contrast (below 4.5:1).",
+      "user_impact": "Strains readability and makes auxiliary navigation difficult to use for users with low vision or in bright lighting environments.",
+      "recommendation": "Darken the blue link color in the breadcrumbs to a more accessible shade (such as #1D4ED8 or #0056B3) to meet WCAG AA contrast requirements.",
+      "confidence": 95,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F003",
+      "principle": "Contrast",
+      "severity": "medium",
+      "location": "Star rating icons on all product cards",
+      "issue": "The yellow fill color of the active stars on the white background fails to meet the 3:1 contrast ratio required for graphical user interface elements, making the ratings hard to read.",
+      "user_impact": "Low-vision users cannot easily distinguish how many stars are active versus inactive, obscuring critical product review metrics.",
+      "recommendation": "Change the star color to a darker, high-contrast gold/amber shade (such as #B45309) and add a dark grey outline to both active and inactive star vectors.",
+      "confidence": 95,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F004",
+      "principle": "Consistency",
+      "severity": "medium",
+      "location": "Book titles in the product grid",
+      "issue": "Book titles are aggressively truncated with ellipses (e.g., 'In a Dark, Dark ...', 'The Last Mile (Amos ...') after only one line of text, even though there is sufficient vertical space to display more text.",
+      "user_impact": "Users cannot scan and identify full book names directly from the category listing, forcing them to click into the product page just to read the full title.",
+      "recommendation": "Allow the book titles to wrap up to a maximum of 2 lines, and apply a consistent min-height to the title text container so the alignment of the prices and 'Add to basket' buttons remains uniform across all cards.",
+      "confidence": 90,
+      "visibility_status": "visible"
+    }
+  ],
+  "summary": "Found 4 valid findings.",
+  "total_findings": 4,
+  "critical_count": 0,
+  "scan_duration_ms": 14591,
+  "warning": null,
+  "low_confidence": null
+}

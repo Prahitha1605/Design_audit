@@ -1,0 +1,44 @@
+{
+  "scan_id": "41cafefe-9868-41c7-8d79-01147f17092a",
+  "timestamp": "2026-06-07T06:51:46.949603Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\scan\\design_audit_audit_6dd3a925.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Star rating icons under each book thumbnail in the product grid",
+      "issue": "The yellow fill color of the stars has extremely poor contrast against the white background, failing the WCAG AA minimum contrast ratio of 3:1 for user interface components and graphical objects.",
+      "user_impact": "Users with low vision or those viewing the site in high-glare environments will struggle to distinguish the star ratings, making it difficult to assess product quality.",
+      "recommendation": "Change the star icon color to a darker amber/gold shade (such as #c2410c or #d97706) or add a dark gray 1px outline around each star to ensure sufficient contrast against the white background.",
+      "confidence": 95
+    },
+    {
+      "id": "F002",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Left sidebar category list links (e.g., 'Travel', 'Mystery', 'Historical Fiction')",
+      "issue": "The light blue text links are displayed on a light gray sidebar container background. The contrast ratio is insufficient, failing the WCAG AA threshold of 4.5:1 for normal text.",
+      "user_impact": "Visually impaired users will find it highly difficult to read the category list, restricting their ability to navigate and filter the bookstore by genre.",
+      "recommendation": "Increase the contrast of the sidebar text links by using a darker blue or teal hex code (e.g., #0e4b5c) and increase the font size slightly to 14px to improve legibility.",
+      "confidence": 92
+    },
+    {
+      "id": "F003",
+      "principle": "Visual Hierarchy",
+      "severity": "medium",
+      "location": "Book title text links in the main product grid",
+      "issue": "Book titles are aggressively truncated to a single line with an ellipsis (e.g., 'A Light in the ...', 'Sapiens: A Brief History ...'), even though there is plenty of vertical space available in the card layout.",
+      "user_impact": "Users cannot read the full name of the books without clicking into the detail pages, which slows down the browsing experience and increases cognitive load.",
+      "recommendation": "Allow the book titles to wrap to a maximum of two lines before truncating. Set a fixed height for the title container to prevent layout shifting and maintain grid alignment.",
+      "confidence": 90
+    }
+  ],
+  "summary": "Found 3 valid findings.",
+  "total_findings": 3,
+  "critical_count": 0,
+  "scan_duration_ms": 20896,
+  "warning": null,
+  "low_confidence": null
+}

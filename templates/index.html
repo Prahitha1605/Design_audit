@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="dashboard">
+
+  <div class="dash-hero">
+    <div class="dash-hero-text">
+      <div class="dash-eyebrow">Automated UI/UX Review</div>
+      <h1 class="dash-title">Design Audit<br/><span class="dash-title-accent">Agent</span></h1>
+      <p class="dash-sub">Catch design regressions before they ship. Visual hierarchy, WCAG contrast, spacing, alignment — reviewed in seconds.</p>
+    </div>
+    <div class="dash-hero-gfx" aria-hidden="true">
+      <div class="gfx-grid">
+        <div class="gfx-dot"></div><div class="gfx-dot"></div><div class="gfx-dot"></div><div class="gfx-dot"></div>
+        <div class="gfx-dot"></div><div class="gfx-dot"></div><div class="gfx-dot"></div><div class="gfx-dot"></div>
+        <div class="gfx-dot"></div><div class="gfx-dot"></div><div class="gfx-dot"></div><div class="gfx-dot"></div>
+        <div class="gfx-dot"></div><div class="gfx-dot"></div><div class="gfx-dot"></div><div class="gfx-dot"></div>
+      </div>
+      <div class="gfx-card">
+        <div class="gfx-bar gfx-bar--amber"></div>
+        <div class="gfx-bar gfx-bar--short"></div>
+        <div class="gfx-bar gfx-bar--medium"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="level-row">
+
+    <a href="/level/1" class="level-card">
+      <div class="lc-header">
+        <span class="lc-index">01</span>
+        <span class="lc-tag">Single image</span>
+      </div>
+      <h2 class="lc-title">Design Audit</h2>
+      <p class="lc-body">Upload one screenshot. Get structured findings across Visual Hierarchy, WCAG Contrast, Spacing, Alignment, and Consistency — with severity and confidence scores.</p>
+      <div class="lc-footer">
+        <div class="lc-pills">
+          <span class="pill">≥ 3 findings</span>
+          <span class="pill">JSON output</span>
+          <span class="pill">WCAG AA</span>
+        </div>
+        <span class="lc-arrow">→</span>
+      </div>
+    </a>
+
+    <a href="/level/2" class="level-card">
+      <div class="lc-header">
+        <span class="lc-index">02</span>
+        <span class="lc-tag">Two images</span>
+      </div>
+      <h2 class="lc-title">Regression Analysis</h2>
+      <p class="lc-body">Compare baseline vs current screenshots. Each visual diff is classified as improvement, regression, or neutral — with hex values and pixel measurements.</p>
+      <div class="lc-footer">
+        <div class="lc-pills">
+          <span class="pill">≥ 5 diffs</span>
+          <span class="pill">Hex values</span>
+          <span class="pill">Verdict</span>
+        </div>
+        <span class="lc-arrow">→</span>
+      </div>
+    </a>
+
+    <a href="/level/3" class="level-card level-card--featured">
+      <div class="lc-header">
+        <span class="lc-index">03</span>
+        <span class="lc-tag lc-tag--amber">Autonomous</span>
+      </div>
+      <h2 class="lc-title">Live Site Scan</h2>
+      <p class="lc-body">Authenticates, navigates, captures, and compares — no human in the loop. Filters dynamic content from real regressions. Full scan in under 3 minutes.</p>
+      <div class="lc-footer">
+        <div class="lc-pills">
+          <span class="pill pill--amber">Browser agent</span>
+          <span class="pill">Baseline store</span>
+          <span class="pill">&lt; 3 min</span>
+        </div>
+        <span class="lc-arrow">→</span>
+      </div>
+    </a>
+
+  </div>
+</div>
+{% endblock %}

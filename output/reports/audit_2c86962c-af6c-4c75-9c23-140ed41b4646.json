@@ -1,0 +1,47 @@
+{
+  "scan_id": "2c86962c-af6c-4c75-9c23-140ed41b4646",
+  "timestamp": "2026-06-07T08:27:14.079601Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\scan\\catalogue_category_books_travel_2_index_audit_bdfe1f8e.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Alignment",
+      "severity": "medium",
+      "location": "Product grid (book items in all rows)",
+      "issue": "Vertical misalignment of star ratings, book titles, and prices within the rows. Because the book cover images have varying aspect ratios and heights and are not placed in a fixed-height container, all elements below the images are pushed down to different vertical positions, creating an uneven and jagged layout.",
+      "user_impact": "Creates visual clutter and makes scanning prices, star ratings, and titles across different products in the same row difficult for users.",
+      "recommendation": "Enclose the book cover images in a container with a fixed height (e.g., 220px) and use flexbox alignment ('display: flex; align-items: center; justify-content: center;') to center the covers. This ensures all stars, titles, and prices align horizontally across each row.",
+      "confidence": 95,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F002",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Left sidebar category navigation menu",
+      "issue": "The light blue link text of the non-selected categories (e.g., 'Mystery', 'Historical Fiction', etc.) fails WCAG AA contrast ratio of 4.5:1 when placed against the very light grey background panel (#f7f7f7).",
+      "user_impact": "Users with moderate visual impairments or those viewing the site on lower quality displays/bright lighting will find it difficult to read and navigate the book categories.",
+      "recommendation": "Change the category link text color to a darker, more saturated blue (such as #1c588c) or a dark slate grey to ensure the contrast ratio meets or exceeds the WCAG AA 4.5:1 requirement against the light grey sidebar background.",
+      "confidence": 90,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F003",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Warning alert banner at the top of the main content area",
+      "issue": "The warning text ('Warning! This is a demo website...') is styled in a medium brown/gold shade on a pale yellow background box. This color combination yields a contrast ratio below the WCAG AA threshold of 4.5:1 for standard body text.",
+      "user_impact": "Important notice/warning information is poorly legible, increasing the chance that users will overlook this message.",
+      "recommendation": "Darken the warning text color to a deep brown (such as #664d03) to ensure a contrast ratio of at least 4.5:1 on the pale yellow (#fcf8e3) background container.",
+      "confidence": 92,
+      "visibility_status": "visible"
+    }
+  ],
+  "summary": "Found 3 valid findings.",
+  "total_findings": 3,
+  "critical_count": 0,
+  "scan_duration_ms": 23992,
+  "warning": null,
+  "low_confidence": null
+}

@@ -1,0 +1,171 @@
+{
+  "scan_id": "52b0d5f7-dc46-4630-8bcc-7e4635e5f7cc",
+  "timestamp": "2026-06-07T06:39:34.143393Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\baseline_55db6fa711cc4be3ba31af1ba0353ff1_before.png",
+  "current_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\current_90b3ff7df19b4223ac243f3b5b1d088b_after.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "diff_001",
+      "location": "Sidebar Navigation Background",
+      "what_changed": "Solid dark blue sidebar replaced with a vibrant blue-to-purple gradient. Selected menu item styling updated to white background with purple text.",
+      "direction": "neutral",
+      "severity": "medium",
+      "reasoning": "Solid dark blue sidebar replaced with a vibrant blue-to-purple gradient. Selected menu item styling updated to white background with purple text. Contrast changed from 20.82 to 20.82. Color shifted from #58606b to #67719a.",
+      "ux_impact": "This differs from the baseline but does not appear to be a strong regression.",
+      "is_accessibility_regression": false,
+      "confidence": 55,
+      "before_color": "#0d1e3d",
+      "after_color": "#3b82f6",
+      "contrast_before": 20.82,
+      "contrast_after": 20.82,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 220,
+        "height": 960
+      }
+    },
+    {
+      "id": "diff_002",
+      "location": "Header Actions & Profile",
+      "what_changed": "Added search keyboard shortcut indicator, dark mode toggle icon, red numeric notification badge, and replaced text initials avatar with actual user photo.",
+      "direction": "improvement",
+      "severity": "medium",
+      "reasoning": "Added search keyboard shortcut indicator, dark mode toggle icon, red numeric notification badge, and replaced text initials avatar with actual user photo. Contrast changed from 20.82 to 20.82. Color shifted from #585858 to #595959.",
+      "ux_impact": "This change improves readability or visual clarity compared to the baseline.",
+      "is_accessibility_regression": false,
+      "confidence": 70,
+      "before_color": "#ffffff",
+      "after_color": "#ffffff",
+      "contrast_before": 20.82,
+      "contrast_after": 20.82,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": {
+        "x": 220,
+        "y": 0,
+        "width": 760,
+        "height": 70
+      }
+    },
+    {
+      "id": "diff_003",
+      "location": "KPI Cards Data",
+      "what_changed": "Performance metrics, percentages, and trend indicators updated with current period statistics.",
+      "direction": "neutral",
+      "severity": "medium",
+      "reasoning": "Performance metrics, percentages, and trend indicators updated with current period statistics. Contrast changed from 20.82 to 20.82. Color shifted from #565657 to #545456.",
+      "ux_impact": "This differs from the baseline but does not appear to be a strong regression.",
+      "is_accessibility_regression": false,
+      "confidence": 55,
+      "before_color": "#ffffff",
+      "after_color": "#ffffff",
+      "contrast_before": 20.82,
+      "contrast_after": 20.82,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": {
+        "x": 240,
+        "y": 140,
+        "width": 720,
+        "height": 150
+      }
+    },
+    {
+      "id": "diff_004",
+      "location": "Sales Overview Chart",
+      "what_changed": "Chart line, data nodes, and area gradient updated from blue to purple matching new brand identity. Interactive hover tooltip added above the May 22 node.",
+      "direction": "improvement",
+      "severity": "medium",
+      "reasoning": "Chart line, data nodes, and area gradient updated from blue to purple matching new brand identity. Interactive hover tooltip added above the May 22 node. Contrast changed from 20.82 to 20.82. Color shifted from #565656 to #565657.",
+      "ux_impact": "This change improves readability or visual clarity compared to the baseline.",
+      "is_accessibility_regression": false,
+      "confidence": 70,
+      "before_color": "#1e3a8a",
+      "after_color": "#6d28d9",
+      "contrast_before": 20.82,
+      "contrast_after": 20.82,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": {
+        "x": 240,
+        "y": 300,
+        "width": 720,
+        "height": 280
+      }
+    },
+    {
+      "id": "diff_005",
+      "location": "Recent Transactions List",
+      "what_changed": "Customer column enhanced by adding circular user avatar images preceding the names.",
+      "direction": "improvement",
+      "severity": "medium",
+      "reasoning": "Customer column enhanced by adding circular user avatar images preceding the names. Contrast changed from 1.93 to 1.14. Color shifted from #060606 to #020202.",
+      "ux_impact": "This change improves readability or visual clarity compared to the baseline.",
+      "is_accessibility_regression": false,
+      "confidence": 70,
+      "before_color": "#ffffff",
+      "after_color": "#ffffff",
+      "contrast_before": 1.93,
+      "contrast_after": 1.14,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": {
+        "x": 240,
+        "y": 600,
+        "width": 720,
+        "height": 300
+      }
+    },
+    {
+      "id": "diff_006",
+      "location": "Footer Layout",
+      "what_changed": "Added legal and support links (Privacy Policy, Terms of Service, Contact Us) aligned to the bottom right of the container.",
+      "direction": "improvement",
+      "severity": "medium",
+      "reasoning": "Added legal and support links (Privacy Policy, Terms of Service, Contact Us) aligned to the bottom right of the container.",
+      "ux_impact": "Visual presentation appears more refined in the current screenshot.",
+      "is_accessibility_regression": false,
+      "confidence": 70,
+      "before_color": "#ffffff",
+      "after_color": "#ffffff",
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": {
+        "x": 240,
+        "y": 920,
+        "width": 720,
+        "height": 40
+      }
+    }
+  ],
+  "verdict": "net_improvement",
+  "accessibility_regressions": 0,
+  "summary": "Detected 6 region(s): 0 regressions, 4 improvements, 2 neutral. Improvements outweigh regressions.",
+  "scan_duration_ms": 20158,
+  "baseline_size": [
+    491,
+    621
+  ],
+  "current_size": [
+    492,
+    607
+  ],
+  "pixel_diff_pct": null,
+  "diff_pixels": null,
+  "diff_bbox": null,
+  "diff_overlay_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\compare_overlay_d7ae7002f209475b8eda379204fbd837.png",
+  "baseline_crop_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\baseline_crop_ff897ecfb38848578cb9b4a3354435aa.png",
+  "current_crop_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\current_crop_a5a7b8724c0e4114ae9548fb3de72223.png"
+}

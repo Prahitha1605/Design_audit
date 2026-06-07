@@ -1,0 +1,171 @@
+{
+  "scan_id": "b8e13bbb-c7e5-425b-bd04-5c6dc97f1772",
+  "timestamp": "2026-06-07T07:00:12.852059Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-69\\test_multiple_ui_regions_detec0\\baseline.png",
+  "current_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-69\\test_multiple_ui_regions_detec0\\current.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "region_1",
+      "location": "Page region",
+      "what_changed": "Visible UI component changed between baseline and current screenshots.",
+      "direction": "neutral",
+      "severity": "medium",
+      "reasoning": "Visible UI component changed between baseline and current screenshots. Region contains 1.87% pixel difference. Color shifted from #ffffff to #0a0a0a.",
+      "ux_impact": "This differs from the baseline but does not appear to be a strong regression.",
+      "is_accessibility_regression": false,
+      "confidence": 55,
+      "before_color": "#ffffff",
+      "after_color": "#0a0a0a",
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 1.87,
+      "bbox": {
+        "x": 20,
+        "y": 20,
+        "width": 41,
+        "height": 41
+      }
+    },
+    {
+      "id": "region_2",
+      "location": "Page region",
+      "what_changed": "Visible UI component changed between baseline and current screenshots.",
+      "direction": "neutral",
+      "severity": "medium",
+      "reasoning": "Visible UI component changed between baseline and current screenshots. Region contains 1.87% pixel difference. Color shifted from #ffffff to #0a0a0a.",
+      "ux_impact": "This differs from the baseline but does not appear to be a strong regression.",
+      "is_accessibility_regression": false,
+      "confidence": 55,
+      "before_color": "#ffffff",
+      "after_color": "#0a0a0a",
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 1.87,
+      "bbox": {
+        "x": 120,
+        "y": 20,
+        "width": 41,
+        "height": 41
+      }
+    },
+    {
+      "id": "region_3",
+      "location": "Page region",
+      "what_changed": "Visible UI component changed between baseline and current screenshots.",
+      "direction": "neutral",
+      "severity": "medium",
+      "reasoning": "Visible UI component changed between baseline and current screenshots. Region contains 1.87% pixel difference. Color shifted from #ffffff to #0a0a0a.",
+      "ux_impact": "This differs from the baseline but does not appear to be a strong regression.",
+      "is_accessibility_regression": false,
+      "confidence": 55,
+      "before_color": "#ffffff",
+      "after_color": "#0a0a0a",
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 1.87,
+      "bbox": {
+        "x": 220,
+        "y": 20,
+        "width": 41,
+        "height": 41
+      }
+    },
+    {
+      "id": "region_4",
+      "location": "Page region",
+      "what_changed": "Visible UI component changed between baseline and current screenshots.",
+      "direction": "neutral",
+      "severity": "medium",
+      "reasoning": "Visible UI component changed between baseline and current screenshots. Region contains 1.87% pixel difference. Color shifted from #ffffff to #0a0a0a.",
+      "ux_impact": "This differs from the baseline but does not appear to be a strong regression.",
+      "is_accessibility_regression": false,
+      "confidence": 55,
+      "before_color": "#ffffff",
+      "after_color": "#0a0a0a",
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 1.87,
+      "bbox": {
+        "x": 20,
+        "y": 120,
+        "width": 41,
+        "height": 41
+      }
+    },
+    {
+      "id": "region_5",
+      "location": "Page region",
+      "what_changed": "Visible UI component changed between baseline and current screenshots.",
+      "direction": "neutral",
+      "severity": "medium",
+      "reasoning": "Visible UI component changed between baseline and current screenshots. Region contains 1.87% pixel difference. Color shifted from #ffffff to #0a0a0a.",
+      "ux_impact": "This differs from the baseline but does not appear to be a strong regression.",
+      "is_accessibility_regression": false,
+      "confidence": 55,
+      "before_color": "#ffffff",
+      "after_color": "#0a0a0a",
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 1.87,
+      "bbox": {
+        "x": 120,
+        "y": 120,
+        "width": 41,
+        "height": 41
+      }
+    },
+    {
+      "id": "region_6",
+      "location": "Page region",
+      "what_changed": "Visible UI component changed between baseline and current screenshots.",
+      "direction": "neutral",
+      "severity": "medium",
+      "reasoning": "Visible UI component changed between baseline and current screenshots. Region contains 1.87% pixel difference. Color shifted from #ffffff to #0a0a0a.",
+      "ux_impact": "This differs from the baseline but does not appear to be a strong regression.",
+      "is_accessibility_regression": false,
+      "confidence": 55,
+      "before_color": "#ffffff",
+      "after_color": "#0a0a0a",
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 1.87,
+      "bbox": {
+        "x": 220,
+        "y": 120,
+        "width": 41,
+        "height": 41
+      }
+    }
+  ],
+  "verdict": "neutral",
+  "accessibility_regressions": 0,
+  "summary": "Detected 6 region(s): 0 regressions, 0 improvements, 6 neutral.",
+  "scan_duration_ms": 826,
+  "baseline_size": [
+    300,
+    300
+  ],
+  "current_size": [
+    300,
+    300
+  ],
+  "pixel_diff_pct": null,
+  "diff_pixels": null,
+  "diff_bbox": null,
+  "diff_overlay_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\compare_overlay_9b14623631e645b2b8d463af58ee91e3.png",
+  "baseline_crop_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\baseline_crop_e83c049cb2244d12b4c748cbb76fd265.png",
+  "current_crop_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\current_crop_c8b42761a83c43fcaa18c92bf9f03f13.png"
+}

@@ -1,0 +1,54 @@
+{
+  "scan_id": "9fa1e37f-6048-4713-9efb-0a1b9deb4959",
+  "timestamp": "2026-06-07T04:13:56.993308Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\scan\\design_audit_audit_dec9b3d1.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "finding-1",
+      "principle": "Contrast",
+      "severity": "critical",
+      "location": "Sidebar menu navigation list ('Travel' through 'Crime')",
+      "issue": "",
+      "user_impact": "",
+      "recommendation": "Increase the contrast of the blue link color to at least 4.5:1 against the light gray background (e.g., change the text color to a darker blue like #1a568c).",
+      "confidence": 75
+    },
+    {
+      "id": "finding-2",
+      "principle": "Contrast",
+      "severity": "critical",
+      "location": "Top header subtitle next to 'Books to Scrape' brand name",
+      "issue": "",
+      "user_impact": "",
+      "recommendation": "Change the subtitle text color to a darker gray (#555555 or darker) to ensure clear readability.",
+      "confidence": 75
+    },
+    {
+      "id": "finding-3",
+      "principle": "Visual Hierarchy",
+      "severity": "medium",
+      "location": "Product grid titles under each book cover image",
+      "issue": "",
+      "user_impact": "",
+      "recommendation": "Allow titles to wrap up to 2 or 3 lines with a min-height container, ensuring complete titles are visible while maintaining grid alignment.",
+      "confidence": 75
+    },
+    {
+      "id": "finding-4",
+      "principle": "Alignment",
+      "severity": "medium",
+      "location": "Product grid images and metadata rows",
+      "issue": "",
+      "user_impact": "",
+      "recommendation": "Set a fixed aspect ratio container (e.g., using CSS object-fit: contain) for the book cover images so that star ratings, titles, and prices align perfectly across each row.",
+      "confidence": 75
+    }
+  ],
+  "summary": "Found 4 findings.",
+  "total_findings": 4,
+  "critical_count": 2,
+  "scan_duration_ms": 26790,
+  "warning": null,
+  "low_confidence": null
+}

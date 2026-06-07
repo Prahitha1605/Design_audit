@@ -1,0 +1,44 @@
+{
+  "scan_id": "2166b41b-7f28-4f40-854d-ccb3c2fbb289",
+  "timestamp": "2026-06-06T18:12:55.622538Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\screenshot.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "finding-1",
+      "principle": "Contrast",
+      "severity": "critical",
+      "location": "Breadcrumb 'All products' text",
+      "issue": "",
+      "user_impact": "",
+      "recommendation": "Change the text color of inactive breadcrumb elements to a darker gray (such as #595959 or darker) to guarantee a contrast ratio of at least 4.5:1 against the light background.",
+      "confidence": 75
+    },
+    {
+      "id": "finding-2",
+      "principle": "Spacing",
+      "severity": "medium",
+      "location": "Sidebar category list bullet points",
+      "issue": "",
+      "user_impact": "",
+      "recommendation": "Apply 'list-style: none' to remove the default bullets, and instead use clean horizontal padding or custom SVG markers to create comfortable breathing room between the list items and indicators.",
+      "confidence": 75
+    },
+    {
+      "id": "finding-3",
+      "principle": "Consistency",
+      "severity": "low",
+      "location": "Book title links",
+      "issue": "",
+      "user_impact": "",
+      "recommendation": "Allow the title text to wrap to a maximum of two lines. Implement a fixed minimum height on the title container to prevent any vertical misalignment of the prices and 'Add to basket' buttons below them.",
+      "confidence": 75
+    }
+  ],
+  "summary": "Found 3 findings.",
+  "total_findings": 3,
+  "critical_count": 1,
+  "scan_duration_ms": 16219,
+  "warning": null,
+  "low_confidence": null
+}

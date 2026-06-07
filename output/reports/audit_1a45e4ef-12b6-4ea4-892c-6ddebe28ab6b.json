@@ -1,0 +1,44 @@
+{
+  "scan_id": "1a45e4ef-12b6-4ea4-892c-6ddebe28ab6b",
+  "timestamp": "2026-06-07T06:44:47.977461Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\scan\\catalogue_category_books_mystery_3_index_audit_28f874bc.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "finding-1",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Book price text labels (e.g., '\u00a347.82')",
+      "issue": "The price text is rendered in a light green color on a white background, which fails to meet the WCAG AA minimum contrast ratio of 4.5:1 for standard text.",
+      "user_impact": "Users with low vision or color vision deficiencies will struggle to read the prices of the products.",
+      "recommendation": "Increase the contrast of the price text by changing the color to a darker green (e.g., #2e7d32) or a dark neutral color (e.g., #212529) that meets or exceeds the 4.5:1 contrast ratio against a white background.",
+      "confidence": 95
+    },
+    {
+      "id": "finding-2",
+      "principle": "Alignment",
+      "severity": "medium",
+      "location": "Product grid cards (stars, titles, and prices)",
+      "issue": "Because the book cover images have variable heights and are not placed in a fixed-size container, the subsequent elements (star ratings, titles, prices, and stock indicators) do not align horizontally across each row.",
+      "user_impact": "The uneven vertical positioning of information across the grid makes scanning and comparing products visually fatiguing for users.",
+      "recommendation": "Enforce a uniform height container for all book cover images (e.g., 200px) and use CSS flexbox or grid to align the star ratings, titles, and price elements to a consistent horizontal baseline.",
+      "confidence": 90
+    },
+    {
+      "id": "finding-3",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Breadcrumb links ('Home / Books / Mystery')",
+      "issue": "The inactive breadcrumb links ('Home' and 'Books') use a very light blue text on a light grey background bar, creating a contrast ratio well below the WCAG AA standard of 4.5:1.",
+      "user_impact": "Users may fail to notice the breadcrumb navigation altogether, making it difficult to understand where they are in the site structure or to navigate back to previous pages.",
+      "recommendation": "Change the breadcrumb link color from light blue to a darker, more accessible blue (e.g., #1a5a80) or dark grey (e.g., #495057) to ensure proper readability against the light grey background.",
+      "confidence": 98
+    }
+  ],
+  "summary": "Found 3 valid findings.",
+  "total_findings": 3,
+  "critical_count": 0,
+  "scan_duration_ms": 18091,
+  "warning": null,
+  "low_confidence": null
+}

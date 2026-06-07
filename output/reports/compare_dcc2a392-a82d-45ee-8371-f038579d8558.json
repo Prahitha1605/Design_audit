@@ -1,0 +1,133 @@
+{
+  "scan_id": "dcc2a392-a82d-45ee-8371-f038579d8558",
+  "timestamp": "2026-06-07T05:29:32.708525Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\baseline_0db8c02002ec405fb27ec18de444ded8_screenshot.png",
+  "current_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\current_af890e1dacdc4010b05f434da3f733cd_image.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "diff_header_navigation",
+      "location": "page",
+      "what_changed": "The browser header, top navigation bar, and breadcrumbs ('Home / All products') visible in the baseline are scrolled out of view in the current screenshot.",
+      "direction": "neutral",
+      "severity": "medium",
+      "reasoning": "The browser header, top navigation bar, and breadcrumbs ('Home / All products') visible in the baseline are scrolled out of view in the current screenshot.",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": false,
+      "confidence": 75,
+      "before_color": null,
+      "after_color": null,
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 31.76,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1000,
+        "height": 210
+      }
+    },
+    {
+      "id": "diff_warning_banner",
+      "location": "page",
+      "what_changed": "The prominent yellow demo site warning banner is visible in the baseline but not present in the current view due to vertical scrolling.",
+      "direction": "neutral",
+      "severity": "medium",
+      "reasoning": "The prominent yellow demo site warning banner is visible in the baseline but not present in the current view due to vertical scrolling.",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": false,
+      "confidence": 75,
+      "before_color": "#fcf8e3",
+      "after_color": null,
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 31.76,
+      "bbox": {
+        "x": 305,
+        "y": 365,
+        "width": 578,
+        "height": 63
+      }
+    },
+    {
+      "id": "diff_sidebar_categories",
+      "location": "page",
+      "what_changed": "The left-hand category navigation panel ('Books', 'Travel', 'Mystery', etc.) is fully visible in the baseline and missing/scrolled past in the current image.",
+      "direction": "neutral",
+      "severity": "medium",
+      "reasoning": "The left-hand category navigation panel ('Books', 'Travel', 'Mystery', etc.) is fully visible in the baseline and missing/scrolled past in the current image.",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": false,
+      "confidence": 75,
+      "before_color": null,
+      "after_color": null,
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 31.76,
+      "bbox": {
+        "x": 110,
+        "y": 230,
+        "width": 178,
+        "height": 770
+      }
+    },
+    {
+      "id": "diff_product_grid_content",
+      "location": "page",
+      "what_changed": "The visible items in the product grid have changed from the first row ('A Light in the...', 'Tipping the Velvet') to lower list items ('Olio', 'Mesaerion...').",
+      "direction": "neutral",
+      "severity": "medium",
+      "reasoning": "The visible items in the product grid have changed from the first row ('A Light in the...', 'Tipping the Velvet') to lower list items ('Olio', 'Mesaerion...').",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": false,
+      "confidence": 75,
+      "before_color": null,
+      "after_color": null,
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 31.76,
+      "bbox": {
+        "x": 300,
+        "y": 450,
+        "width": 585,
+        "height": 550
+      }
+    },
+    {
+      "id": "diff_pagination_footer",
+      "location": "page",
+      "what_changed": "The bottom pagination control ('Page 1 of 50' and 'next' button) is visible in the current view, but was out of frame in the baseline.",
+      "direction": "neutral",
+      "severity": "medium",
+      "reasoning": "The bottom pagination control ('Page 1 of 50' and 'next' button) is visible in the current view, but was out of frame in the baseline.",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": false,
+      "confidence": 75,
+      "before_color": null,
+      "after_color": null,
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 31.76,
+      "bbox": {
+        "x": 550,
+        "y": 960,
+        "width": 330,
+        "height": 40
+      }
+    }
+  ],
+  "verdict": "neutral",
+  "accessibility_regressions": 0,
+  "summary": "Found 5 differences: 0 regressions, 0 improvements, 5 neutral. Pixel diff is 31.76%.",
+  "scan_duration_ms": 12617
+}

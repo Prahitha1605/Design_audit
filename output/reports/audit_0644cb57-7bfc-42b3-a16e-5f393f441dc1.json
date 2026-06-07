@@ -1,0 +1,47 @@
+{
+  "scan_id": "0644cb57-7bfc-42b3-a16e-5f393f441dc1",
+  "timestamp": "2026-06-07T08:10:03.739880Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\level1_9c34bf02202c484fb579fbc7a35c10aa_screenshot.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Book price elements (e.g., '\u00a351.77', '\u00a353.74')",
+      "issue": "The light green font color used for the prices on the white background provides insufficient visual contrast, falling well below the WCAG AA 4.5:1 ratio requirement.",
+      "user_impact": "Users with low vision, age-related visual decline, or those viewing the screen under direct sunlight will struggle to clearly read the product prices.",
+      "recommendation": "Darken the green text color from its current light shade to a darker green (e.g., #2e7d32 or #1c6229) to achieve a contrast ratio of at least 4.5:1 against the white background.",
+      "confidence": 95,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F002",
+      "principle": "Visual Hierarchy",
+      "severity": "medium",
+      "location": "Book titles in the product grid (e.g., 'A Light in the ...')",
+      "issue": "Book titles are prematurely truncated with ellipses to fit a single line, hiding key product information.",
+      "user_impact": "Users cannot identify the full titles of the books directly from the listing page, forcing them to guess or click into each product page, which increases interaction cost and cognitive friction.",
+      "recommendation": "Implement line-clamping to allow titles to wrap up to 2 lines (e.g., using 'display: -webkit-box' and '-webkit-line-clamp: 2' in CSS) while establishing a minimum height for the title container to prevent layout misalignment.",
+      "confidence": 90,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F003",
+      "principle": "Contrast",
+      "severity": "medium",
+      "location": "Warning banner container text ('Warning! This is a demo website...')",
+      "issue": "The ochre/brown text color on the light yellow background within the disclaimer banner does not meet the minimum WCAG AA 4.5:1 contrast ratio threshold.",
+      "user_impact": "Visually impaired or distracted users may miss the important disclaimer stating that the prices and ratings on this demo site are simulated.",
+      "recommendation": "Increase the contrast by darkening the banner's text color to a deeper, dark brown (e.g., #533f0e) or near-black to guarantee readability while retaining the warning color scheme.",
+      "confidence": 92,
+      "visibility_status": "visible"
+    }
+  ],
+  "summary": "Found 3 valid findings.",
+  "total_findings": 3,
+  "critical_count": 0,
+  "scan_duration_ms": 20862,
+  "warning": null,
+  "low_confidence": null
+}

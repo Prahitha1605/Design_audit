@@ -1,0 +1,65 @@
+{
+  "scan_id": "8ae299be-72aa-42a2-afdd-5032a3d05127",
+  "timestamp": "2026-06-07T05:48:57.224795Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-53\\test_gemini_screenshot_compari0\\a.png",
+  "current_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-53\\test_gemini_screenshot_compari0\\b.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "1",
+      "location": "Header navigation",
+      "what_changed": "Header drops by 8px and pushes navigation layout.",
+      "direction": "neutral",
+      "severity": "medium",
+      "reasoning": "Header drops by 8px and pushes navigation layout.",
+      "ux_impact": "This differs from the baseline but does not appear to be a strong regression.",
+      "is_accessibility_regression": false,
+      "confidence": 55,
+      "before_color": null,
+      "after_color": null,
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": null
+    },
+    {
+      "id": "2",
+      "location": "Sidebar links",
+      "what_changed": "Link contrast falls below WCAG AA.",
+      "direction": "neutral",
+      "severity": "high",
+      "reasoning": "Link contrast falls below WCAG AA.",
+      "ux_impact": "This differs from the baseline but does not appear to be a strong regression.",
+      "is_accessibility_regression": false,
+      "confidence": 55,
+      "before_color": null,
+      "after_color": null,
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": null
+    }
+  ],
+  "verdict": "neutral",
+  "accessibility_regressions": 0,
+  "summary": "Detected 2 region(s): 0 regressions, 0 improvements, 2 neutral.",
+  "scan_duration_ms": 36,
+  "baseline_size": [
+    100,
+    100
+  ],
+  "current_size": [
+    100,
+    100
+  ],
+  "pixel_diff_pct": null,
+  "diff_pixels": null,
+  "diff_bbox": null,
+  "diff_overlay_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\compare_overlay_71538b139948420fb05ea7aba735f0b6.png",
+  "baseline_crop_path": null,
+  "current_crop_path": null
+}

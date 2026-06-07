@@ -1,0 +1,147 @@
+{
+  "scan_id": "9b3cc72e-dc2d-41d8-a94a-d9165f621503",
+  "timestamp": "2026-06-07T08:29:40.107744Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\baseline_32dcc8a512f14dbc9371baeeb7b66056_before.png",
+  "current_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\current_1207a89b182346ba982e154013e9699f_after.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "sidebar-background",
+      "location": "Sidebar Container",
+      "what_changed": "Sidebar background updated from solid dark navy to a vibrant blue-to-purple gradient.",
+      "direction": "neutral",
+      "severity": "medium",
+      "reasoning": "Sidebar background updated from solid dark navy to a vibrant blue-to-purple gradient. Contrast changed from 20.82 to 20.82. Color shifted from #57606b to #677299.",
+      "ux_impact": "This differs from the baseline but does not appear to be a strong regression.",
+      "is_accessibility_regression": false,
+      "confidence": 55,
+      "before_color": "#0B1E3C",
+      "after_color": "linear-gradient(to bottom, #4D5DFB, #8F3BFB)",
+      "contrast_before": 20.82,
+      "contrast_after": 20.82,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": {
+        "x": 8,
+        "y": 8,
+        "width": 210,
+        "height": 950
+      }
+    },
+    {
+      "id": "active-menu-item",
+      "location": "Active Menu Item (Overview)",
+      "what_changed": "Overview menu item background changed from blue to white, with text changing to purple for a cleaner look.",
+      "direction": "improvement",
+      "severity": "medium",
+      "reasoning": "Overview menu item background changed from blue to white, with text changing to purple for a cleaner look. Contrast changed from 18.57 to 6.14. Color shifted from #8793a5 to #a0aef5.",
+      "ux_impact": "This change improves readability or visual clarity compared to the baseline.",
+      "is_accessibility_regression": false,
+      "confidence": 70,
+      "before_color": "#185ADB",
+      "after_color": "#FFFFFF",
+      "contrast_before": 18.57,
+      "contrast_after": 6.14,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": {
+        "x": 20,
+        "y": 85,
+        "width": 190,
+        "height": 45
+      }
+    },
+    {
+      "id": "top-nav-features",
+      "location": "Top Navigation Bar",
+      "what_changed": "Added keyboard shortcut indicator to search, theme switcher icon, notification count, and actual user avatar.",
+      "direction": "improvement",
+      "severity": "medium",
+      "reasoning": "Added keyboard shortcut indicator to search, theme switcher icon, notification count, and actual user avatar. Contrast changed from 20.82 to 20.82. Color shifted from #555556 to #575657.",
+      "ux_impact": "This change improves readability or visual clarity compared to the baseline.",
+      "is_accessibility_regression": false,
+      "confidence": 70,
+      "before_color": "#555556",
+      "after_color": "#575657",
+      "contrast_before": 20.82,
+      "contrast_after": 20.82,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": {
+        "x": 240,
+        "y": 15,
+        "width": 720,
+        "height": 50
+      }
+    },
+    {
+      "id": "chart-style",
+      "location": "Sales Overview Chart",
+      "what_changed": "Chart color palette updated from blue to purple theme, and a hover tooltip has been added.",
+      "direction": "improvement",
+      "severity": "medium",
+      "reasoning": "Chart color palette updated from blue to purple theme, and a hover tooltip has been added. Contrast changed from 20.82 to 20.82. Color shifted from #555555 to #545455.",
+      "ux_impact": "This change improves readability or visual clarity compared to the baseline.",
+      "is_accessibility_regression": false,
+      "confidence": 70,
+      "before_color": "#185ADB",
+      "after_color": "#7C3AED",
+      "contrast_before": 20.82,
+      "contrast_after": 20.82,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": {
+        "x": 245,
+        "y": 300,
+        "width": 715,
+        "height": 310
+      }
+    },
+    {
+      "id": "transaction-table-avatars",
+      "location": "Recent Transactions Table",
+      "what_changed": "Added user avatar images next to customer names in the transactions list, improving visual hierarchy.",
+      "direction": "improvement",
+      "severity": "medium",
+      "reasoning": "Added user avatar images next to customer names in the transactions list, improving visual hierarchy.",
+      "ux_impact": "Visual presentation appears more refined in the current screenshot.",
+      "is_accessibility_regression": false,
+      "confidence": 70,
+      "before_color": "#000000",
+      "after_color": "#000000",
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": {
+        "x": 245,
+        "y": 625,
+        "width": 715,
+        "height": 310
+      }
+    }
+  ],
+  "verdict": "net_improvement",
+  "accessibility_regressions": 0,
+  "summary": "The UI update shifts the platform to a modern, colorful theme with gradient sidebars, clearer interactive components like chart tooltips, and useful new functional elements like avatars and shortcuts.",
+  "scan_duration_ms": 14293,
+  "baseline_size": [
+    491,
+    621
+  ],
+  "current_size": [
+    492,
+    607
+  ],
+  "pixel_diff_pct": null,
+  "diff_pixels": null,
+  "diff_bbox": null,
+  "diff_overlay_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\compare_overlay_fc7783a68ecf42c28823e056fc6b211f.png",
+  "baseline_crop_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\baseline_crop_5425ffdf08db446093a5f1a3e09049cb.png",
+  "current_crop_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\current_crop_7b7968c36dd94abdbd52fb91da5219d0.png"
+}

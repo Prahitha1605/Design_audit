@@ -1,0 +1,54 @@
+{
+  "scan_id": "7e64f8eb-fbb3-4e22-96ea-cf470f57b4c6",
+  "timestamp": "2026-06-06T18:49:59.390524Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\level1_b07c9d8159e54fd4aceb8c224b836cc1_Screenshot_36.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "finding-1",
+      "principle": "Contrast",
+      "severity": "critical",
+      "location": "Sidebar disclaimer and helper text ('* Any applicable taxes...' and 'Questions? Please direct...')",
+      "issue": "",
+      "user_impact": "",
+      "recommendation": "Change the text color to a darker neutral gray (such as #595959 or darker) to satisfy the 4.5:1 contrast requirement.",
+      "confidence": 75
+    },
+    {
+      "id": "finding-2",
+      "principle": "Contrast",
+      "severity": "critical",
+      "location": "Price category labels inside the 'IEEE Member Prices' container ('IEEE member', 'IEEE Student member', 'Non-IEEE member')",
+      "issue": "",
+      "user_impact": "",
+      "recommendation": "Style these category labels in a darker gray (e.g., #333333) or the brand's dark blue color to improve readability against the container's background.",
+      "confidence": 75
+    },
+    {
+      "id": "finding-3",
+      "principle": "Spacing",
+      "severity": "medium",
+      "location": "The circular close ('X') button in the main membership container",
+      "issue": "",
+      "user_impact": "",
+      "recommendation": "Increase the top and right margin/padding of the button to at least 16px to align with standard container breathing room.",
+      "confidence": 75
+    },
+    {
+      "id": "finding-4",
+      "principle": "Visual Hierarchy",
+      "severity": "low",
+      "location": "Progress navigation breadcrumbs ('Contact Information' through 'Order Confirmation')",
+      "issue": "",
+      "user_impact": "",
+      "recommendation": "Distinguish the active step with a bolder font weight or a prominent background indicator, and style completed steps with a neutral gray or a green checkmark.",
+      "confidence": 75
+    }
+  ],
+  "summary": "Found 4 findings.",
+  "total_findings": 4,
+  "critical_count": 2,
+  "scan_duration_ms": 21209,
+  "warning": null,
+  "low_confidence": null
+}

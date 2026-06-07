@@ -1,0 +1,51 @@
+{
+  "scan_id": "d76ed86d-d0e1-4aa0-87d3-d80e944c5d31",
+  "timestamp": "2026-06-07T05:54:26.405719Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-57\\test_accessibility_regression_0\\a.png",
+  "current_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-57\\test_accessibility_regression_0\\b.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "D001",
+      "location": "body text",
+      "what_changed": "Color changed from #ffffff to #0a0a0a in the affected region.",
+      "direction": "regression",
+      "severity": "medium",
+      "reasoning": "contrast ratio lowered",
+      "ux_impact": "unreadable",
+      "is_accessibility_regression": true,
+      "confidence": 85,
+      "before_color": "#ffffff",
+      "after_color": "#0a0a0a",
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 100.0,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 100
+      }
+    }
+  ],
+  "verdict": "net_regression",
+  "accessibility_regressions": 1,
+  "summary": "contrast issue",
+  "scan_duration_ms": 51,
+  "baseline_size": [
+    100,
+    100
+  ],
+  "current_size": [
+    100,
+    100
+  ],
+  "pixel_diff_pct": null,
+  "diff_pixels": null,
+  "diff_bbox": null,
+  "diff_overlay_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\compare_overlay_7ff84cdce7094b8898bddcea3db6d579.png",
+  "baseline_crop_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\baseline_crop_1690fcb91f524d53ab7d3ce1039840c9.png",
+  "current_crop_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\current_crop_bdc3d2b24c184e9dae9b79c48e5b92df.png"
+}

@@ -1,0 +1,11 @@
+{
+  "base_url": "https://books.toscrape.com",
+  "pages": [
+    "/",
+    "/catalogue/category/books/travel_2/index.html",
+    "/catalogue/category/books/mystery_3/index.html"
+  ],
+  "viewport_width": 1440,
+  "viewport_height": 900,
+  "baseline_mode": true
+}

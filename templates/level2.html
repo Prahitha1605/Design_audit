@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block title %}Level 2 — Regression Analysis{% endblock %}
+
+{% block content %}
+<div class="level-page">
+  <div class="lp-sidebar">
+    <a href="/" class="back-link">← Dashboard</a>
+    <div class="lp-meta">
+      <div class="lp-index">02</div>
+      <h1 class="lp-title">Regression Analysis</h1>
+      <p class="lp-desc">Upload a baseline and current screenshot. The agent diffs every visual change and classifies each one — improvement, regression, or neutral.</p>
+    </div>
+    <div class="lp-criteria">
+      <div class="criteria-heading">Acceptance criteria</div>
+      <ul class="criteria-list">
+        <li>Two image inputs: baseline + current</li>
+        <li>≥ 5 visual differences with hex / pixel detail</li>
+        <li>Direction per finding with written reasoning</li>
+        <li>UX impact explanation per change</li>
+        <li>Confidence score (0–100%)</li>
+        <li>Explicit accessibility regression flags</li>
+        <li>Overall improvement vs regression verdict</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="lp-main">
+    <form method="post" action="/compare" enctype="multipart/form-data" class="lp-form">
+      <div class="form-section compare-grid">
+        <div>
+          <label class="form-label">Baseline <span class="form-hint">Before</span></label>
+          <div class="dropzone">
+            <input type="file" name="baseline" accept="image/png,image/jpeg,image/webp" required />
+            <div class="dropzone-inner">
+              <div class="dz-icon dz-icon--before">B</div>
+              <span class="dropzone-label">Before screenshot</span>
+              <span class="dz-hint">PNG · JPG · WebP</span>
+            </div>
+          </div>
+        </div>
+        <div class="compare-divider" aria-hidden="true">
+          <span>→</span>
+        </div>
+        <div>
+          <label class="form-label">Current <span class="form-hint">After</span></label>
+          <div class="dropzone">
+            <input type="file" name="current" accept="image/png,image/jpeg,image/webp" required />
+            <div class="dropzone-inner">
+              <div class="dz-icon dz-icon--after">A</div>
+              <span class="dropzone-label">After screenshot</span>
+              <span class="dz-hint">PNG · JPG · WebP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section form-section--row">
+        <div class="form-field">
+          <label class="form-label" for="model_l2">Vision model</label>
+          <select id="model_l2" name="model" class="form-select">
+            <option value="gemini">Gemini</option>
+            <option value="grok">Grok</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-run">
+        <span>Compare Screenshots</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </form>
+  </div>
+</div>
+{% endblock %}

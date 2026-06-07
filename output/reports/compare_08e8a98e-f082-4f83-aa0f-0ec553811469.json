@@ -1,0 +1,46 @@
+{
+  "scan_id": "08e8a98e-f082-4f83-aa0f-0ec553811469",
+  "timestamp": "2026-06-07T06:50:43.819579Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-66\\test_micro_changes_are_ignored0\\baseline.png",
+  "current_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-66\\test_micro_changes_are_ignored0\\current.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "diff_001",
+      "location": "page",
+      "what_changed": "No measurable visual difference detected.",
+      "direction": "neutral",
+      "severity": "info",
+      "reasoning": "Baseline and current screenshots are visually equivalent.",
+      "ux_impact": "No regression detected.",
+      "is_accessibility_regression": false,
+      "confidence": 95,
+      "before_color": null,
+      "after_color": null,
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 0.0,
+      "bbox": null
+    }
+  ],
+  "verdict": "neutral",
+  "accessibility_regressions": 0,
+  "summary": "Detected 1 region(s): 0 regressions, 0 improvements, 1 neutral.",
+  "scan_duration_ms": 56,
+  "baseline_size": [
+    100,
+    100
+  ],
+  "current_size": [
+    100,
+    100
+  ],
+  "pixel_diff_pct": null,
+  "diff_pixels": null,
+  "diff_bbox": null,
+  "diff_overlay_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\compare_overlay_1fc7241d9cbc40febf214916fb41ba4a.png",
+  "baseline_crop_path": null,
+  "current_crop_path": null
+}

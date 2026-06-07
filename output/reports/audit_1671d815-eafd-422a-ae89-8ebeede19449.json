@@ -1,0 +1,47 @@
+{
+  "scan_id": "1671d815-eafd-422a-ae89-8ebeede19449",
+  "timestamp": "2026-06-07T08:33:15.569671Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\level1_938bc6576f7b4817b089ac849e1f963f_screenshot.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Price text (e.g., '\u00a351.77') and availability text (e.g., 'In stock') for each product card",
+      "issue": "The light green color used for the price text and stock status on a white background has insufficient visual contrast, falling well below the WCAG AA requirement of 4.5:1 for normal text.",
+      "user_impact": "Users with low vision or moderate visual impairments will find it extremely difficult to read the prices and availability status of the items.",
+      "recommendation": "Change the green text color to a darker shade, such as #2e7d32 (contrast ratio > 4.5:1) to ensure WCAG AA compliance while maintaining the semantic color meaning.",
+      "confidence": 95,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F002",
+      "principle": "Visual Hierarchy",
+      "severity": "medium",
+      "location": "Product titles (e.g., 'A Light in the ...') under each book cover image",
+      "issue": "Product titles are aggressively truncated to a single line with an ellipsis, preventing users from seeing the full title of the books directly from the gallery grid.",
+      "user_impact": "Users must click through to the product page or hover to discover the complete book title, which slows down the browsing flow and decreases usability.",
+      "recommendation": "Allow product titles to wrap to a maximum of two lines with a fixed-height container (e.g., line-clamp: 2; height: 40px;) to show more descriptive titles while maintaining grid alignment.",
+      "confidence": 90,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F003",
+      "principle": "Spacing",
+      "severity": "low",
+      "location": "Left sidebar category navigation menu (under 'Books' heading)",
+      "issue": "The list items use browser-default bullet points (hollow circles) which are positioned extremely close to the text, causing a crowded layout and looking unstyled.",
+      "user_impact": "The crowded list hierarchy looks unpolished and reduces the visual scanning efficiency of the categories list.",
+      "recommendation": "Remove default list styling using 'list-style: none;', and introduce custom padding-left (e.g., 8px) with a subtle vertical line or hover background to define hierarchy cleanly.",
+      "confidence": 95,
+      "visibility_status": "visible"
+    }
+  ],
+  "summary": "Found 3 valid findings.",
+  "total_findings": 3,
+  "critical_count": 0,
+  "scan_duration_ms": 17127,
+  "warning": null,
+  "low_confidence": null
+}

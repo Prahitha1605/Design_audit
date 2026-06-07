@@ -1,0 +1,54 @@
+{
+  "scan_id": "6a98a0e4-eb7e-4b46-83e6-0ecdec6af0dd",
+  "timestamp": "2026-06-07T04:21:11.739991Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\level1_7301600bc4fe45729ee09119a6c66f50_screenshot.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Contrast",
+      "severity": "critical",
+      "location": "Price text elements (e.g., '\u00a351.77')",
+      "issue": "The bright green color used for the book prices (e.g., '\u00a351.77') has a very low contrast ratio against the white background, failing the WCAG AA minimum contrast threshold of 4.5:1 for body-sized text.",
+      "user_impact": "",
+      "recommendation": "",
+      "confidence": 75
+    },
+    {
+      "id": "F002",
+      "principle": "Visual Hierarchy",
+      "severity": "high",
+      "location": "Product title links below book covers",
+      "issue": "Book titles in the catalog grid (e.g., 'A Light in the ...') are aggressively truncated to a single line, hiding key book information and making titles unreadable directly from the gallery view.",
+      "user_impact": "",
+      "recommendation": "",
+      "confidence": 75
+    },
+    {
+      "id": "F003",
+      "principle": "Alignment",
+      "severity": "medium",
+      "location": "Sidebar list items (e.g., 'Travel', 'Mystery')",
+      "issue": "The sidebar category links are rendered with default browser bullet points (open circles) that push the text inward, resulting in misaligned left margins compared to the parent 'Books' header.",
+      "user_impact": "",
+      "recommendation": "",
+      "confidence": 75
+    },
+    {
+      "id": "F004",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "'Home' breadcrumb link",
+      "issue": "The light blue text color used for the breadcrumb 'Home' link fails the WCAG AA contrast requirement of 4.5:1 when placed inside the light gray breadcrumb container.",
+      "user_impact": "",
+      "recommendation": "",
+      "confidence": 75
+    }
+  ],
+  "summary": "Found 4 findings.",
+  "total_findings": 4,
+  "critical_count": 1,
+  "scan_duration_ms": 17720,
+  "warning": null,
+  "low_confidence": null
+}

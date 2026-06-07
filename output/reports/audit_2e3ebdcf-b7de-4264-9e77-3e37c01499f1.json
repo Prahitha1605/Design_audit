@@ -1,0 +1,54 @@
+{
+  "scan_id": "2e3ebdcf-b7de-4264-9e77-3e37c01499f1",
+  "timestamp": "2026-06-07T06:44:25.467789Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\scan\\catalogue_category_books_travel_2_index_audit_0f7466ca.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Contrast",
+      "severity": "medium",
+      "location": "Header tagline 'We love being scraped!'",
+      "issue": "The tagline text 'We love being scraped!' next to the main logo has very low contrast against the light gray/white background, failing to meet the WCAG AA 4.5:1 contrast threshold.",
+      "user_impact": "Users with visual impairments or those viewing the website in bright environments will find it difficult or impossible to read this tagline.",
+      "recommendation": "Change the color of the tagline text from its current light gray to a darker gray (e.g., #555555 or #333333) to ensure it meets accessibility standards.",
+      "confidence": 95
+    },
+    {
+      "id": "F002",
+      "principle": "Alignment",
+      "severity": "medium",
+      "location": "Product grid cards (stars, titles, prices, and 'Add to basket' buttons)",
+      "issue": "The star ratings, price tags, and action buttons do not align horizontally across the row. This is caused by varying image heights and product titles wrapping to different numbers of lines, which pushes subsequent card content down unequally.",
+      "user_impact": "Creates a visually cluttered layout that increases cognitive load and makes it difficult for users to scan and compare prices or ratings across products.",
+      "recommendation": "Apply a uniform height to the product cards or use a CSS Flexbox layout with 'flex-direction: column' and set a fixed 'min-height' on the title wrapper. Apply 'margin-top: auto' to the buttons to force them to align perfectly along the bottom baseline.",
+      "confidence": 98
+    },
+    {
+      "id": "F003",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Yellow alert banner text ('Warning! This is a demo website...')",
+      "issue": "The gold/brown text color inside the yellow 'Warning!' banner does not have sufficient contrast against the light yellow background block, failing WCAG AA (4.5:1) standards.",
+      "user_impact": "Important notice information is difficult to read for low-vision users, which may lead to them missing critical context about the website's purpose.",
+      "recommendation": "Darken the warning text to a high-contrast dark brown color (e.g., #664d03) and ensure it meets the 4.5:1 contrast ratio against the light yellow background.",
+      "confidence": 90
+    },
+    {
+      "id": "F004",
+      "principle": "Visual Hierarchy",
+      "severity": "low",
+      "location": "Left sidebar category heading 'Books'",
+      "issue": "The 'Books' heading in the sidebar is visually weak. It uses a small font size and lacks distinct styling compared to the category list items directly below it, which reduces its effectiveness as a section header.",
+      "user_impact": "Users might struggle to quickly distinguish the sidebar title from the navigation link items, leading to a poorer page structure perception.",
+      "recommendation": "Style the 'Books' heading with a larger font size (e.g., 16px), make it bold or uppercase, and add a subtle bottom border or extra bottom margin to clearly separate it from the category list.",
+      "confidence": 88
+    }
+  ],
+  "summary": "Found 4 valid findings.",
+  "total_findings": 4,
+  "critical_count": 0,
+  "scan_duration_ms": 18519,
+  "warning": null,
+  "low_confidence": null
+}

@@ -1,0 +1,23 @@
+{
+  "scan_id": "5c13e9c8-56b1-4073-a3f5-e1eb0e68e469",
+  "timestamp": "2026-06-06T18:23:47.598970Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-16\\test_gemini_report_wrapper_nor0\\a.png",
+  "current_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-16\\test_gemini_report_wrapper_nor0\\b.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "diff_01",
+      "location": "Header nav",
+      "what_changed": "Contrast dropped on nav links.",
+      "direction": "regression",
+      "reasoning": "Contrast dropped on nav links.",
+      "ux_impact": "Likely a significant usability regression.",
+      "is_accessibility_regression": true,
+      "confidence": 4
+    }
+  ],
+  "verdict": "net_regression",
+  "accessibility_regressions": 1,
+  "summary": "Found 1 differences.",
+  "scan_duration_ms": 1
+}

@@ -1,0 +1,47 @@
+{
+  "scan_id": "5f12afb1-7711-4fd8-9b90-cb146fec714e",
+  "timestamp": "2026-06-07T08:21:12.099891Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\scan\\catalogue_category_books_mystery_3_index_audit_6ed316be.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Product Grid -> \"In stock\" availability status text and checkmark icon",
+      "issue": "The light green text and checkmark icon used for the \"In stock\" status fail the WCAG AA contrast ratio requirement of 4.5:1 against the white background, making it difficult to read.",
+      "user_impact": "Users with low vision or color vision deficiencies will struggle to determine if products are available.",
+      "recommendation": "Change the green color of the \"In stock\" text and icon from the current bright green to a darker, more saturated green (such as #2e7d32) to achieve a contrast ratio of at least 4.5:1 against the white background.",
+      "confidence": 95,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F002",
+      "principle": "Contrast",
+      "severity": "medium",
+      "location": "Product Grid -> Star rating icons",
+      "issue": "The pale yellow star rating icons have extremely low contrast against the white background, failing the WCAG AA 3:1 contrast requirement for graphical objects and user interface components.",
+      "user_impact": "Users cannot easily distinguish the product ratings or see how many stars a book has received without visual strain.",
+      "recommendation": "Darken the yellow color used for filled stars to a deeper gold/amber hue (such as #d97706) and add a subtle dark outline to the empty stars to ensure high visibility against the white background.",
+      "confidence": 90,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F003",
+      "principle": "Spacing",
+      "severity": "medium",
+      "location": "Product Grid -> Book titles and card content gaps",
+      "issue": "Because book titles vary in length and are aggressively truncated to different heights, the vertical spacing between the title, price, and availability status is highly inconsistent across cards in the same row.",
+      "user_impact": "The uneven vertical gaps create a messy, unaligned visual layout that disrupts reading flow and looks unpolished.",
+      "recommendation": "Set a fixed height or a consistent min-height for the title container (allowing up to 2 lines of text) and use CSS flexbox properties (e.g., 'display: flex; flex-direction: column; justify-content: space-between;') to ensure elements like price, stock status, and buttons align perfectly on the same horizontal baseline across all cards.",
+      "confidence": 88,
+      "visibility_status": "visible"
+    }
+  ],
+  "summary": "Found 3 valid findings.",
+  "total_findings": 3,
+  "critical_count": 0,
+  "scan_duration_ms": 32340,
+  "warning": null,
+  "low_confidence": null
+}

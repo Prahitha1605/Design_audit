@@ -1,0 +1,75 @@
+{
+  "scan_id": "c11c40cf-a39c-4079-ab15-604d0b19517d",
+  "timestamp": "2026-06-07T08:11:29.989326Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\baseline_5f5ae43230c244da9e850b3e4ed6ee82_before.png",
+  "current_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\current_b99f3fa3a29f4c22bf61d77e5bb17d42_after.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "region_1",
+      "location": "Page region",
+      "what_changed": "Visible UI component changed between baseline and current screenshots.",
+      "direction": "regression",
+      "severity": "medium",
+      "reasoning": "Visible UI component changed between baseline and current screenshots. Contrast changed from 17.94 to 8.79. Region contains 26.79% pixel difference. Color shifted from #c2c9d1 to #cad1f0.",
+      "ux_impact": "Reduced contrast makes content harder to read for low-vision users and weakens visual hierarchy.",
+      "is_accessibility_regression": true,
+      "confidence": 75,
+      "before_color": "#c2c9d1",
+      "after_color": "#cad1f0",
+      "contrast_before": 17.94,
+      "contrast_after": 8.79,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 26.79,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 468,
+        "height": 621
+      }
+    },
+    {
+      "id": "region_002",
+      "location": "Page region",
+      "what_changed": "Visible UI component changed between baseline and current screenshots.",
+      "direction": "regression",
+      "severity": "medium",
+      "reasoning": "Visible UI component changed between baseline and current screenshots. Contrast changed from 17.94 to 8.79. Region contains 26.79% pixel difference. Color shifted from #c2c9d1 to #cad1f0.",
+      "ux_impact": "Reduced contrast makes content harder to read for low-vision users and weakens visual hierarchy.",
+      "is_accessibility_regression": true,
+      "confidence": 75,
+      "before_color": "#c2c9d1",
+      "after_color": "#cad1f0",
+      "contrast_before": 17.94,
+      "contrast_after": 8.79,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 26.79,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 468,
+        "height": 621
+      }
+    }
+  ],
+  "verdict": "net_regression",
+  "accessibility_regressions": 2,
+  "summary": "Detected 2 region(s): 2 regressions, 0 improvements, 0 neutral. Accessibility regressions detected in 2 region(s). Regressions outweigh improvements.",
+  "scan_duration_ms": 19611,
+  "baseline_size": [
+    491,
+    621
+  ],
+  "current_size": [
+    492,
+    607
+  ],
+  "pixel_diff_pct": null,
+  "diff_pixels": null,
+  "diff_bbox": null,
+  "diff_overlay_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\compare_overlay_894d9ba068634525bf5e00b49fd8d1c4.png",
+  "baseline_crop_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\baseline_crop_6ca3888189624d40a6ac26db9fbced89.png",
+  "current_crop_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\current_crop_757b4b5398ef4e6abfff88849c81e718.png"
+}

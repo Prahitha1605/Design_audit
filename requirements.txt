@@ -1,0 +1,9 @@
+pydantic>=2.0
+python-dotenv
+requests
+google-generativeai
+Pillow
+python-json-logger
+Flask
+pytest
+playwright

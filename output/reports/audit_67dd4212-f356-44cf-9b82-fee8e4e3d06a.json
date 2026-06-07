@@ -1,0 +1,54 @@
+{
+  "scan_id": "67dd4212-f356-44cf-9b82-fee8e4e3d06a",
+  "timestamp": "2026-06-06T19:32:50.038521Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\level1_6e5f4df6366d45b38be0fe66580c662d_Screenshot_36.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Contrast",
+      "severity": "critical",
+      "location": "Sidebar disclaimer and question text in 'My Cart' ('* Any applicable taxes...', 'Questions? Please direct...')",
+      "issue": "The light grey body text and secondary links on the white background in the right-hand sidebar fail to meet the WCAG AA minimum contrast ratio of 4.5:1.",
+      "user_impact": "",
+      "recommendation": "Change the text color of the disclaimer and question text to a darker grey (minimum contrast ratio of 4.5:1 against the white background) to ensure readability for users with low vision.",
+      "confidence": 75
+    },
+    {
+      "id": "F002",
+      "principle": "Contrast",
+      "severity": "critical",
+      "location": "Grey background box text ('IEEE member', 'IEEE Student member', 'Non-IEEE member' and prices)",
+      "issue": "The text inside the grey pricing box uses a medium grey font color against a light grey background block, failing the WCAG AA 4.5:1 contrast requirement.",
+      "user_impact": "",
+      "recommendation": "Increase the text color darkness to at least #595959 or darker, or darken the text to black/dark blue to guarantee a safe contrast ratio against the grey background container.",
+      "confidence": 75
+    },
+    {
+      "id": "F003",
+      "principle": "Alignment",
+      "severity": "medium",
+      "location": "Breadcrumb chevron separator icons ('>')",
+      "issue": "The arrow/chevron separators in the 'Contact Information > Profile Summary > Catalog > ...' horizontal progression bar are vertically misaligned (positioned too low) relative to the neighboring text labels.",
+      "user_impact": "",
+      "recommendation": "Adjust the vertical alignment of the chevron icons using CSS (e.g., flexbox alignment or vertical-align adjustments) so that they are optically centered with the text labels.",
+      "confidence": 75
+    },
+    {
+      "id": "F004",
+      "principle": "Consistency",
+      "severity": "low",
+      "location": "'Search' button and 'CONTINUE' button",
+      "issue": "Inconsistent button styling and border-radius applications are used across the interface: the orange Search button has sharp left corners and rounded right corners, while the orange 'CONTINUE' button is a fully rounded capsule shape.",
+      "user_impact": "",
+      "recommendation": "Standardize the button component design system. Apply consistent border-radius (e.g., 4px or capsule) across all primary interactive button elements.",
+      "confidence": 75
+    }
+  ],
+  "summary": "Found 4 findings.",
+  "total_findings": 4,
+  "critical_count": 2,
+  "scan_duration_ms": 13700,
+  "warning": null,
+  "low_confidence": null
+}

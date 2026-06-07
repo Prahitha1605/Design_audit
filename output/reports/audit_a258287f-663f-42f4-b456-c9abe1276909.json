@@ -1,0 +1,47 @@
+{
+  "scan_id": "a258287f-663f-42f4-b456-c9abe1276909",
+  "timestamp": "2026-06-07T09:24:23.301378Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\scan\\design_audit_audit_c8524ac9.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Spacing",
+      "severity": "high",
+      "location": "Product grid, specifically Row 3 ('Starving Hearts...') and Row 4 ('Scott Pilgrim's Precious Little...')",
+      "issue": "Grid items have variable heights because multi-line book titles push the price, availability status, and 'Add to basket' buttons downward. This breaks the horizontal alignment across the row, creating an uneven and jagged layout.",
+      "user_impact": "Users encounter a disorganized layout where product actions and prices do not line up horizontally, making it harder to scan and compare products efficiently.",
+      "recommendation": "Apply a consistent height to the product card container and use flexbox with 'flex-direction: column' and 'justify-content: space-between' to align the 'Add to basket' buttons and prices perfectly along the bottom of the row.",
+      "confidence": 95,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F002",
+      "principle": "Contrast",
+      "severity": "critical",
+      "location": "Star rating indicators under each book cover",
+      "issue": "The yellow/gold stars representing the book ratings have extremely low contrast against the white background (estimated ratio below 2:1), violating WCAG AA guidelines for non-text contrast.",
+      "user_impact": "Users with low vision or color vision deficiencies will find it extremely difficult or impossible to read the product ratings.",
+      "recommendation": "Change the star fill color to a darker gold/amber hue (e.g., #b45309) that reaches at least a 3:1 contrast ratio against white, or add a dark 1px outline to the star icons.",
+      "confidence": 98,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F003",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Left-hand sidebar category menu list",
+      "issue": "The light blue category link text (e.g., 'Travel', 'Mystery') on the light grey container background does not meet the WCAG AA contrast ratio of 4.5:1 for normal-sized text.",
+      "user_impact": "Significantly reduces readability of the primary navigation options, causing eye strain and poor usability for visually impaired users.",
+      "recommendation": "Increase the contrast of the sidebar links by changing the text color to a darker blue (such as #1a4f7a) or dark grey/black to guarantee a minimum contrast ratio of 4.5:1 against the light grey background.",
+      "confidence": 92,
+      "visibility_status": "visible"
+    }
+  ],
+  "summary": "Found 3 valid findings.",
+  "total_findings": 3,
+  "critical_count": 1,
+  "scan_duration_ms": 17903,
+  "warning": null,
+  "low_confidence": null
+}

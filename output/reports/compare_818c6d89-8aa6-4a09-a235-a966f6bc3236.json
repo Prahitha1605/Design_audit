@@ -1,0 +1,51 @@
+{
+  "scan_id": "818c6d89-8aa6-4a09-a235-a966f6bc3236",
+  "timestamp": "2026-06-07T05:50:06.849305Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-55\\test_local_diff_evidence_in_fa0\\baseline.png",
+  "current_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-55\\test_local_diff_evidence_in_fa0\\current.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "region_1",
+      "location": "Page region",
+      "what_changed": "Visible region changed between baseline and current screenshots.",
+      "direction": "neutral",
+      "severity": "medium",
+      "reasoning": "Visible region changed between baseline and current screenshots. Region contains 100.0% pixel difference. Color shifted from #ffffff to #dcdcdc.",
+      "ux_impact": "This differs from the baseline but does not appear to be a strong regression.",
+      "is_accessibility_regression": false,
+      "confidence": 85,
+      "before_color": "#ffffff",
+      "after_color": "#dcdcdc",
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": 100.0,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 100
+      }
+    }
+  ],
+  "verdict": "neutral",
+  "accessibility_regressions": 0,
+  "summary": "Detected 1 region(s): 0 regressions, 0 improvements, 1 neutral.",
+  "scan_duration_ms": 45,
+  "baseline_size": [
+    100,
+    100
+  ],
+  "current_size": [
+    100,
+    100
+  ],
+  "pixel_diff_pct": null,
+  "diff_pixels": null,
+  "diff_bbox": null,
+  "diff_overlay_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\compare_overlay_f50c239e9a6641eba96053b5730164f1.png",
+  "baseline_crop_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\baseline_crop_1b1d5510999a4d1e94c630087d5064ed.png",
+  "current_crop_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\current_crop_8969327e408d4a22839c8743c54df077.png"
+}

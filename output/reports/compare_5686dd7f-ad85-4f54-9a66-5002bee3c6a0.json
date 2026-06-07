@@ -1,0 +1,147 @@
+{
+  "scan_id": "5686dd7f-ad85-4f54-9a66-5002bee3c6a0",
+  "timestamp": "2026-06-07T09:21:12.778455Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\baseline_199b0f225b104637bcf54076f4ade3f3_before.png",
+  "current_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\current_c9971df76ab240428e435638ed3ac2f4_after.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "diff_sidebar_background",
+      "location": "Sidebar Navigation Panel",
+      "what_changed": "Color changed from #58606b to #67719a in the affected region.",
+      "direction": "neutral",
+      "severity": "medium",
+      "reasoning": "Color changed from #58606b to #67719a in the affected region. Contrast changed from 20.82 to 20.82. Color shifted from #58606b to #67719a.",
+      "ux_impact": "This differs from the baseline but does not appear to be a strong regression.",
+      "is_accessibility_regression": false,
+      "confidence": 55,
+      "before_color": "#031530",
+      "after_color": "#3B82F6",
+      "contrast_before": 20.82,
+      "contrast_after": 20.82,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 220,
+        "height": 960
+      }
+    },
+    {
+      "id": "diff_header_controls",
+      "location": "Search and Header Tools",
+      "what_changed": "Color changed from #767677 to #787878 in the affected region.",
+      "direction": "improvement",
+      "severity": "medium",
+      "reasoning": "Color changed from #767677 to #787878 in the affected region. Contrast changed from 20.82 to 20.82. Color shifted from #767677 to #787878.",
+      "ux_impact": "This change improves readability or visual clarity compared to the baseline.",
+      "is_accessibility_regression": false,
+      "confidence": 70,
+      "before_color": "#FFFFFF",
+      "after_color": "#FFFFFF",
+      "contrast_before": 20.82,
+      "contrast_after": 20.82,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": {
+        "x": 240,
+        "y": 15,
+        "width": 520,
+        "height": 50
+      }
+    },
+    {
+      "id": "diff_user_profile",
+      "location": "User Profile Header Area",
+      "what_changed": "Visible region changed between baseline and current screenshots.",
+      "direction": "improvement",
+      "severity": "medium",
+      "reasoning": "Visible region changed between baseline and current screenshots.",
+      "ux_impact": "Visual presentation appears more refined in the current screenshot.",
+      "is_accessibility_regression": false,
+      "confidence": 70,
+      "before_color": "#0F172A",
+      "after_color": "multi-color",
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": {
+        "x": 750,
+        "y": 15,
+        "width": 210,
+        "height": 50
+      }
+    },
+    {
+      "id": "diff_sales_chart",
+      "location": "Sales Overview Chart",
+      "what_changed": "Color changed from #555656 to #565657 in the affected region.",
+      "direction": "improvement",
+      "severity": "medium",
+      "reasoning": "Color changed from #555656 to #565657 in the affected region. Contrast changed from 20.82 to 20.82. Color shifted from #555656 to #565657.",
+      "ux_impact": "This change improves readability or visual clarity compared to the baseline.",
+      "is_accessibility_regression": false,
+      "confidence": 70,
+      "before_color": "#3B82F6",
+      "after_color": "#6366F1",
+      "contrast_before": 20.82,
+      "contrast_after": 20.82,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": {
+        "x": 240,
+        "y": 290,
+        "width": 720,
+        "height": 310
+      }
+    },
+    {
+      "id": "diff_transaction_table_avatars",
+      "location": "Transactions Customer Column",
+      "what_changed": "Visible region changed between baseline and current screenshots.",
+      "direction": "improvement",
+      "severity": "medium",
+      "reasoning": "Visible region changed between baseline and current screenshots.",
+      "ux_impact": "Visual presentation appears more refined in the current screenshot.",
+      "is_accessibility_regression": false,
+      "confidence": 70,
+      "before_color": "transparent",
+      "after_color": "multi-color",
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": {
+        "x": 340,
+        "y": 680,
+        "width": 180,
+        "height": 240
+      }
+    }
+  ],
+  "verdict": "net_improvement",
+  "accessibility_regressions": 0,
+  "summary": "Visual regression analysis reveals UI modernization updates, including a gradient sidebar, enhanced header controls, updated chart colors with a tooltip, and new avatar elements in the transactions list.",
+  "scan_duration_ms": 16944,
+  "baseline_size": [
+    491,
+    621
+  ],
+  "current_size": [
+    492,
+    607
+  ],
+  "pixel_diff_pct": null,
+  "diff_pixels": null,
+  "diff_bbox": null,
+  "diff_overlay_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\compare_overlay_282094bb4c7a4c14b9fcbb13bba19fc8.png",
+  "baseline_crop_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\baseline_crop_617a006d7cbe40c8a76460d39d6293d0.png",
+  "current_crop_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\current_crop_1e67e9d671404fafb609f332814ba6a7.png"
+}

@@ -1,0 +1,63 @@
+{
+  "scan_id": "64604c5d-e401-4b33-81d5-30286fba2715",
+  "timestamp": "2026-06-06T18:54:21.862327Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\baseline_d99f72494d4048f1b3e2d1d85cbdfbe4_Screenshot_2026-05-25_222335.png",
+  "current_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\current_19d95bfe85584efd806e230946621613_Screenshot_2026-05-25_223034.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "diff_1",
+      "location": "Chatbot UI Window",
+      "what_changed": "Chatbot panel transitioned from fully expanded to a minimized floating action button.",
+      "direction": "neutral",
+      "reasoning": "Chatbot panel transitioned from fully expanded to a minimized floating action button.",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": false,
+      "confidence": 75
+    },
+    {
+      "id": "diff_2",
+      "location": "Download Resume Button",
+      "what_changed": "A new 'Download Resume' action button is now displayed below the action bar.",
+      "direction": "improvement",
+      "reasoning": "A new 'Download Resume' action button is now displayed below the action bar.",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": false,
+      "confidence": 75
+    },
+    {
+      "id": "diff_3",
+      "location": "Resume Template Preview",
+      "what_changed": "A green-themed live resume preview panel is rendered below the controls.",
+      "direction": "improvement",
+      "reasoning": "A green-themed live resume preview panel is rendered below the controls.",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": false,
+      "confidence": 75
+    },
+    {
+      "id": "diff_4",
+      "location": "Scroll Position",
+      "what_changed": "The container viewport has scrolled down to focus on the newly generated resume content.",
+      "direction": "neutral",
+      "reasoning": "The container viewport has scrolled down to focus on the newly generated resume content.",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": false,
+      "confidence": 75
+    },
+    {
+      "id": "diff_5",
+      "location": "Cursor Hover Indicator",
+      "what_changed": "Active pointer cursor overlay on the 'Change Layout' button.",
+      "direction": "neutral",
+      "reasoning": "Active pointer cursor overlay on the 'Change Layout' button.",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": false,
+      "confidence": 75
+    }
+  ],
+  "verdict": "net_improvement",
+  "accessibility_regressions": 0,
+  "summary": "Found 5 differences: 0 regressions, 2 improvements, 3 neutral.",
+  "scan_duration_ms": 11499
+}

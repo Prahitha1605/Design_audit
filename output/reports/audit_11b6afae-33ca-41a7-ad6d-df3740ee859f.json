@@ -1,0 +1,54 @@
+{
+  "scan_id": "11b6afae-33ca-41a7-ad6d-df3740ee859f",
+  "timestamp": "2026-06-07T06:44:03.704060Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\scan\\design_audit_audit_4014f8f7.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Contrast",
+      "severity": "critical",
+      "location": "Sidebar category navigation links on the left panel (e.g., 'Travel', 'Mystery')",
+      "issue": "The light blue link text on the light gray sidebar background does not meet the WCAG AA contrast ratio of 4.5:1 for normal text.",
+      "user_impact": "Visually impaired users will find the category sidebar illegible, severely hindering navigation.",
+      "recommendation": "Change the text color of the sidebar links to a darker blue (such as #1a5a96) to ensure a contrast ratio of at least 4.5:1 against the light gray background.",
+      "confidence": 95
+    },
+    {
+      "id": "F002",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Warning banner at the top of the main content area",
+      "issue": "The dark yellow/brown warning text on the pale yellow alert background fails the WCAG AA contrast requirement of 4.5:1.",
+      "user_impact": "Users with low vision or screen glare may struggle to read or entirely miss this important website disclaimer.",
+      "recommendation": "Increase the contrast by using a darker foreground color (such as #664d03) on the warning alert background.",
+      "confidence": 90
+    },
+    {
+      "id": "F003",
+      "principle": "Visual Hierarchy",
+      "severity": "high",
+      "location": "Book titles under each book cover image in the grid",
+      "issue": "Titles are prematurely truncated with ellipses (e.g., 'A Light in the ...'), hiding essential product information.",
+      "user_impact": "Users cannot determine the full name of a book without clicking through to the detail page, causing unnecessary friction while browsing.",
+      "recommendation": "Allow book titles to wrap to a second line instead of truncating them immediately on a single line, and enforce a fixed height for the title container to maintain grid alignment.",
+      "confidence": 95
+    },
+    {
+      "id": "F004",
+      "principle": "Consistency",
+      "severity": "medium",
+      "location": "Book cover images across the product grid",
+      "issue": "The book cover images have inconsistent aspect ratios and dimensions, causing uneven spacing, misaligned elements below them, and visual clutter.",
+      "user_impact": "The uneven visual layout makes the product grid feel unpolished and harder for users to scan comfortably.",
+      "recommendation": "Apply a standardized container with fixed dimensions (e.g., height of 200px) for all book cover images and use CSS 'object-fit: contain' to ensure consistent grid alignment.",
+      "confidence": 90
+    }
+  ],
+  "summary": "Found 4 valid findings.",
+  "total_findings": 4,
+  "critical_count": 1,
+  "scan_duration_ms": 20485,
+  "warning": null,
+  "low_confidence": null
+}

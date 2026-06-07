@@ -1,0 +1,44 @@
+{
+  "scan_id": "34032018-8050-4fa2-9e53-919574541bc3",
+  "timestamp": "2026-06-07T04:29:40.095993Z",
+  "image_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-38\\test_valid_png_accepted0\\test.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "hero CTA button",
+      "issue": "Button text is light gray on a medium blue background, reducing legibility.",
+      "user_impact": "Users with low vision will have difficulty reading the call-to-action text.",
+      "recommendation": "Increase contrast by using darker text or a darker button background to meet 4.5:1.",
+      "confidence": 90
+    },
+    {
+      "id": "F002",
+      "principle": "Spacing",
+      "severity": "medium",
+      "location": "header navigation",
+      "issue": "Navigation links are spaced too tightly and appear crowded.",
+      "user_impact": "Users may struggle to distinguish individual navigation targets quickly.",
+      "recommendation": "Increase horizontal space between links to at least 16px.",
+      "confidence": 80
+    },
+    {
+      "id": "F003",
+      "principle": "Alignment",
+      "severity": "low",
+      "location": "footer link group",
+      "issue": "Footer links are not aligned to the same baseline.",
+      "user_impact": "The footer appears visually uneven and less polished.",
+      "recommendation": "Align footer links to the baseline grid used by the copyright text.",
+      "confidence": 70
+    }
+  ],
+  "summary": "ok",
+  "total_findings": 3,
+  "critical_count": 0,
+  "scan_duration_ms": 2,
+  "warning": null,
+  "low_confidence": null
+}

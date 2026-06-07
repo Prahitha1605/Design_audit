@@ -1,0 +1,47 @@
+{
+  "scan_id": "98261136-ddda-4d9a-ac63-2fa11b43c128",
+  "timestamp": "2026-06-07T08:20:34.836699Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\scan\\catalogue_category_books_travel_2_index_audit_dc65d9dc.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Header subtitle text (\"We love being scraped!\")",
+      "issue": "The light blue/gray text has an insufficient contrast ratio against the white background, failing the WCAG AA standard of 4.5:1 for normal text.",
+      "user_impact": "Users with low vision, aging eyes, or those viewing the screen in bright environments will struggle to read this secondary branding message.",
+      "recommendation": "Darken the subtitle text color to a deeper gray (such as #595959) or the primary brand blue to establish a contrast ratio of at least 4.5:1.",
+      "confidence": 95,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F002",
+      "principle": "Alignment",
+      "severity": "medium",
+      "location": "Product grid (\"Add to basket\" buttons)",
+      "issue": "The 'Add to basket' buttons do not align horizontally across rows. Variable book title lengths (e.g., 'Vagabonding: An Uncommon Guide...' wrapping to two lines) cause vertical shifts in the elements below them.",
+      "user_impact": "Creates a jagged visual path, making the grid look unpolished and increasing the cognitive effort required to scan and click action buttons across a row.",
+      "recommendation": "Apply a flexbox layout to the product cards (`display: flex; flex-direction: column; justify-content: space-between;`) and set a fixed min-height or line clamping on the book title container so that the buttons always align perfectly along the bottom of the row.",
+      "confidence": 90,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F003",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Warning alert banner text (\"Warning! This is a demo website...\")",
+      "issue": "The brownish-yellow text on the light yellow background does not achieve the required 4.5:1 WCAG AA contrast ratio for standard body text.",
+      "user_impact": "Visually impaired or color-blind users may miss or struggle to read this important informational disclaimer.",
+      "recommendation": "Darken the text color to a deeper, high-contrast brown (such as #664d03 or #533f03) while keeping the light yellow background to preserve the warning aesthetic while meeting accessibility guidelines.",
+      "confidence": 92,
+      "visibility_status": "visible"
+    }
+  ],
+  "summary": "Found 3 valid findings.",
+  "total_findings": 3,
+  "critical_count": 0,
+  "scan_duration_ms": 20340,
+  "warning": null,
+  "low_confidence": null
+}

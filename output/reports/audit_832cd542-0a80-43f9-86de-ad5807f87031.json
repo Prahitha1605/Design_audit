@@ -1,0 +1,44 @@
+{
+  "scan_id": "832cd542-0a80-43f9-86de-ad5807f87031",
+  "timestamp": "2026-06-06T20:02:04.759642Z",
+  "image_path": "screenshot.png",
+  "model_used": "mock",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "primary CTA",
+      "issue": "Button label #FFFFFF on #1A73E8 falls below WCAG AA for body text.",
+      "user_impact": "Users may struggle to read the call-to-action.",
+      "recommendation": "Increase button text contrast or darken the background.",
+      "confidence": 92
+    },
+    {
+      "id": "F002",
+      "principle": "Spacing",
+      "severity": "medium",
+      "location": "card grid",
+      "issue": "Cards are separated by only 8px instead of 16px.",
+      "user_impact": "The layout feels cramped and harder to scan.",
+      "recommendation": "Increase card margins to 16px.",
+      "confidence": 85
+    },
+    {
+      "id": "F003",
+      "principle": "Alignment",
+      "severity": "low",
+      "location": "footer links",
+      "issue": "Footer items are not vertically aligned with the copyright text.",
+      "user_impact": "Minor visual inconsistency.",
+      "recommendation": "Align footer links with the baseline grid.",
+      "confidence": 75
+    }
+  ],
+  "summary": "Mock audit produced three actionable findings.",
+  "total_findings": 3,
+  "critical_count": 0,
+  "scan_duration_ms": 25,
+  "warning": null,
+  "low_confidence": null
+}

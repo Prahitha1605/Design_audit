@@ -1,0 +1,12 @@
+{
+  "scan_id": "c06ea45a-173d-431d-abb2-543dfe7db086",
+  "timestamp": "2026-06-06T19:14:48.748508Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\baseline_18f4364ab63d4d018c203979608e3982_Screenshot_2026-05-25_222335.png",
+  "current_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\current_8cc79332beb14e3494a9cf34e79684ed_Screenshot_2026-05-25_223034.png",
+  "model_used": "gemini",
+  "differences": [],
+  "verdict": "neutral",
+  "accessibility_regressions": 0,
+  "summary": "No visual differences detected.",
+  "scan_duration_ms": 13084
+}

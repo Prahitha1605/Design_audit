@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}Design Audit Agent{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <div class="grain"></div>
+
+    <header class="topbar">
+      <a href="/" class="topbar-brand">
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+          <rect x="1" y="1" width="8" height="8" rx="1.5" fill="var(--amber)"/>
+          <rect x="11" y="1" width="8" height="8" rx="1.5" fill="var(--fg-3)"/>
+          <rect x="1" y="11" width="8" height="8" rx="1.5" fill="var(--fg-3)"/>
+          <rect x="11" y="11" width="8" height="8" rx="1.5" fill="var(--fg-2)"/>
+        </svg>
+        <span>Design Audit</span>
+      </a>
+      <nav class="topbar-nav">
+        <a href="/" class="topbar-link {% if request.path == '/' %}is-active{% endif %}">Dashboard</a>
+        <a href="/reports" class="topbar-link {% if request.path == '/reports' %}is-active{% endif %}">Reports</a>
+      </nav>
+    </header>
+
+    <div class="page-wrap">
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          <div class="flash-region">
+            {% for category, message in messages %}
+              <div class="flash flash--{{ category }}">
+                <span class="flash-icon">⚠</span>
+                <span>{{ message }}</span>
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+      {% endwith %}
+
+      {% block content %}{% endblock %}
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".dropzone").forEach((zone) => {
+          const input = zone.querySelector("input[type=file]");
+          const label = zone.querySelector(".dropzone-label");
+          const defaultText = label?.textContent ?? "";
+          zone.addEventListener("dragover", (e) => { e.preventDefault(); zone.classList.add("is-dragging"); });
+          zone.addEventListener("dragleave", () => zone.classList.remove("is-dragging"));
+          zone.addEventListener("drop", (e) => {
+            e.preventDefault();
+            zone.classList.remove("is-dragging");
+            const files = e.dataTransfer?.files;
+            if (files?.length) {
+              input.files = files;
+              if (label) label.textContent = files[0].name;
+              zone.classList.add("has-file");
+            }
+          });
+          input?.addEventListener("change", () => {
+            const name = input.files?.[0]?.name;
+            if (label) label.textContent = name || defaultText;
+            zone.classList.toggle("has-file", !!name);
+          });
+        });
+      });
+    </script>
+    {% block scripts %}{% endblock %}
+  </body>
+</html>

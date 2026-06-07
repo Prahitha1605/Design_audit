@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="result-page">
+  <div class="result-topbar">
+    <a href="/" class="back-link">← Dashboard</a>
+    <h1 class="result-title">{{ title }}</h1>
+    <div class="result-chips">
+      {% if details.model_used %}<span class="chip chip--model">{{ details.model_used }}</span>{% endif %}
+      {% if details.scan_duration_ms %}<span class="chip chip--time">{{ details.scan_duration_ms }} ms</span>{% endif %}
+    </div>
+  </div>
+
+  <div class="result-summary">{{ summary }}</div>
+
+  <div class="result-body">
+    <section class="result-section">
+      <h2 class="section-heading">
+        {% if primary_label == 'findings' %}Findings
+        {% elif primary_label == 'differences' %}Visual Differences
+        {% else %}Scan Pages{% endif %}
+        <span class="section-count">
+          {% if primary_label == 'findings' %}{{ details.findings | length }}
+          {% elif primary_label == 'differences' %}{{ details.differences | length }}
+          {% elif primary_label == 'scan_pages' %}{{ details.pages | length }}{% endif %}
+        </span>
+      </h2>
+
+      <div class="findings-table">
+        {% if primary_label == 'scan_pages' %}
+          {% for page in details.pages %}
+          <div class="finding-row">
+            <div class="fr-top">
+              <span class="fr-loc">{{ page.page_name }}</span>
+              {% if page.report.verdict %}
+                <div class="fr-right">
+                  <span class="badge badge--{{ page.report.verdict }}">{{ page.report.verdict }}</span>
+                </div>
+              {% endif %}
+            </div>
+            <div class="fr-body">
+              {% if page.report.summary %}{{ page.report.summary }}{% else %}Audit completed{% endif %}
+            </div>
+            {% if page.report.differences and page.report.differences|length > 0 %}
+            <div class="fr-details">
+              <strong>Differences Found:</strong>
+              {% for diff in page.report.differences %}
+              <div class="diff-item">
+                <p><strong>{{ diff.what_changed }}</strong></p>
+                <p><small>Impact: {{ diff.ux_impact }}</small></p>
+                <p><small>Reasoning: {{ diff.reasoning }}</small></p>
+                <p><small>Confidence: {{ diff.confidence }}%</small></p>
+              </div>
+              {% endfor %}
+            </div>
+            {% endif %}
+            {% if page.report.findings and page.report.findings|length > 0 %}
+            <div class="fr-details">
+              <strong>Audit Findings:</strong>
+              {% for finding in page.report.findings %}
+              <div class="finding-item">
+                <p><strong>{{ finding.issue }}</strong> ({{ finding.severity }})</p>
+                <p><small>Location: {{ finding.location }}</small></p>
+                <p><small>Recommendation: {{ finding.recommendation }}</small></p>
+                <p><small>Confidence: {{ finding.confidence }}%</small></p>
+              </div>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+          {% endfor %}
+
+        {% elif primary_label == 'differences' %}
+          {% for item in details.differences %}
+          <div class="finding-row">
+            <div class="fr-top">
+              <span class="fr-loc">{{ item.location }}</span>
+              <div class="fr-right">
+                <span class="badge badge--{{ item.direction }}">{{ item.direction }}</span>
+                <span class="fr-conf">{{ item.confidence }}%</span>
+              </div>
+            </div>
+            <div class="fr-body">{{ item.what_changed }}</div>
+          </div>
+          {% endfor %}
+
+        {% else %}
+          {% for item in details.findings %}
+          <div class="finding-row">
+            <div class="fr-top">
+              <span class="fr-loc">{{ item.location }}</span>
+              <div class="fr-right">
+                <span class="badge badge--{{ item.severity }}">{{ item.severity }}</span>
+                <span class="fr-conf">{{ item.confidence }}%</span>
+              </div>
+            </div>
+            <div class="fr-body">{{ item.issue }}</div>
+          </div>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </section>
+
+    <section class="result-section">
+      <h2 class="section-heading">Raw JSON</h2>
+      <pre class="json-pre">{{ details | tojson(indent=2) }}</pre>
+    </section>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,47 @@
+{
+  "scan_id": "08209079-920a-49f1-87da-db00caef88cd",
+  "timestamp": "2026-06-07T09:23:13.915827Z",
+  "image_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\scan\\design_audit_audit_460b0d9c.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Alignment",
+      "severity": "medium",
+      "location": "Product card grid (Rows 3, 4, and 5)",
+      "issue": "Varying lengths of book titles (e.g., 'Starving Hearts (Triangular Trade ...' and 'Scott Pilgrim's Precious Little ...') wrap to multiple lines, causing the price, stock status, and 'Add to basket' buttons to shift vertically. This breaks the horizontal alignment of action buttons across the grid rows.",
+      "user_impact": "Disrupts visual scanning and makes the layout look messy. Users cannot rely on a predictable layout, which can cause misclicks when scanning and interacting with buttons quickly.",
+      "recommendation": "Set a fixed height for the product titles or use CSS Flexbox on the product card container with 'flex-direction: column' and set 'margin-top: auto' on the 'Add to basket' button to force all action buttons to align perfectly at the bottom of the grid row.",
+      "confidence": 95,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F002",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "Star rating indicators beneath book images",
+      "issue": "The active yellow stars used to show book ratings have an insufficient contrast ratio (approximately 1.8:1) against the white background, violating the WCAG AA 3:1 contrast requirement for graphical elements and non-text indicators.",
+      "user_impact": "Users with low vision or color blindness will struggle to perceive or count the active rating stars, making a key product decision factor inaccessible.",
+      "recommendation": "Change the active star color to a darker gold/amber shade (e.g., #b25e00) or add a dark 1px outline to the star shape to ensure clear visibility against the white background.",
+      "confidence": 92,
+      "visibility_status": "visible"
+    },
+    {
+      "id": "F003",
+      "principle": "Visual Hierarchy",
+      "severity": "high",
+      "location": "Left-hand category sidebar navigation",
+      "issue": "The sidebar features a flat list of over 50 categories with uniform font sizes, weights, and colors. The lack of indentation, categorization, or collapsible sections results in poor visual scannability.",
+      "user_impact": "Users must scroll and read through a dense 'wall of text' to locate a specific category, leading to high cognitive load and potential navigation abandonment.",
+      "recommendation": "Group the categories into collapsible parent genres (e.g., 'Fiction', 'Non-Fiction', 'Academic') or implement a search/filter field at the top of the sidebar. Additionally, increase spacing between items to 8px to improve scannability.",
+      "confidence": 90,
+      "visibility_status": "visible"
+    }
+  ],
+  "summary": "Found 3 valid findings.",
+  "total_findings": 3,
+  "critical_count": 0,
+  "scan_duration_ms": 28622,
+  "warning": null,
+  "low_confidence": null
+}

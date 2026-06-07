@@ -1,0 +1,63 @@
+{
+  "scan_id": "8ea52281-1342-4f0c-9c77-062ac169f8b9",
+  "timestamp": "2026-06-06T16:58:33.091109Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-3\\test_verdict_produced0\\a.png",
+  "current_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-3\\test_verdict_produced0\\b.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "D001",
+      "location": "hero",
+      "what_changed": "color #ffffff -> #f0f0f0",
+      "direction": "neutral",
+      "reasoning": "minor color shift",
+      "ux_impact": "low",
+      "is_accessibility_regression": false,
+      "confidence": 80
+    },
+    {
+      "id": "D001",
+      "location": "hero",
+      "what_changed": "color #ffffff -> #f0f0f0",
+      "direction": "neutral",
+      "reasoning": "minor color shift",
+      "ux_impact": "low",
+      "is_accessibility_regression": false,
+      "confidence": 80
+    },
+    {
+      "id": "D001",
+      "location": "hero",
+      "what_changed": "color #ffffff -> #f0f0f0",
+      "direction": "neutral",
+      "reasoning": "minor color shift",
+      "ux_impact": "low",
+      "is_accessibility_regression": false,
+      "confidence": 80
+    },
+    {
+      "id": "D001",
+      "location": "hero",
+      "what_changed": "color #ffffff -> #f0f0f0",
+      "direction": "neutral",
+      "reasoning": "minor color shift",
+      "ux_impact": "low",
+      "is_accessibility_regression": false,
+      "confidence": 80
+    },
+    {
+      "id": "D001",
+      "location": "hero",
+      "what_changed": "color #ffffff -> #f0f0f0",
+      "direction": "neutral",
+      "reasoning": "minor color shift",
+      "ux_impact": "low",
+      "is_accessibility_regression": false,
+      "confidence": 80
+    }
+  ],
+  "verdict": "net_improvement",
+  "accessibility_regressions": 0,
+  "summary": "ok",
+  "scan_duration_ms": 12
+}

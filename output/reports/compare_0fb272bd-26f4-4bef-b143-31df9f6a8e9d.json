@@ -1,0 +1,46 @@
+{
+  "scan_id": "0fb272bd-26f4-4bef-b143-31df9f6a8e9d",
+  "timestamp": "2026-06-07T06:24:17.177267Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-62\\test_grok_compare_uses_two_ima0\\a.png",
+  "current_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-62\\test_grok_compare_uses_two_ima0\\b.png",
+  "model_used": "grok",
+  "differences": [
+    {
+      "id": "D001",
+      "location": "hero",
+      "what_changed": "Visible region changed between baseline and current screenshots.",
+      "direction": "neutral",
+      "severity": "medium",
+      "reasoning": "minor change",
+      "ux_impact": "low",
+      "is_accessibility_regression": false,
+      "confidence": 80,
+      "before_color": null,
+      "after_color": null,
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": null
+    }
+  ],
+  "verdict": "neutral",
+  "accessibility_regressions": 0,
+  "summary": "ok",
+  "scan_duration_ms": 30,
+  "baseline_size": [
+    100,
+    100
+  ],
+  "current_size": [
+    100,
+    100
+  ],
+  "pixel_diff_pct": null,
+  "diff_pixels": null,
+  "diff_bbox": null,
+  "diff_overlay_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\compare_overlay_f5cf1601c8244c0188bdb205fa50783d.png",
+  "baseline_crop_path": null,
+  "current_crop_path": null
+}

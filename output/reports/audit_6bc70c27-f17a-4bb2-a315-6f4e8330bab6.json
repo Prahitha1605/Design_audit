@@ -1,0 +1,24 @@
+{
+  "scan_id": "6bc70c27-f17a-4bb2-a315-6f4e8330bab6",
+  "timestamp": "2026-06-06T20:06:30.485574Z",
+  "image_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-34\\test_grok_model_uses_local_ima0\\test.png",
+  "model_used": "grok",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "hero CTA",
+      "issue": "Low contrast",
+      "user_impact": "Hard to read",
+      "recommendation": "Increase contrast",
+      "confidence": 90
+    }
+  ],
+  "summary": "ok",
+  "total_findings": 1,
+  "critical_count": 0,
+  "scan_duration_ms": 3,
+  "warning": "fewer_than_3_findings",
+  "low_confidence": null
+}

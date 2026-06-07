@@ -1,0 +1,63 @@
+{
+  "scan_id": "9d1dc379-9ef1-4356-966d-b0c202b54da7",
+  "timestamp": "2026-06-07T04:59:41.462032Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\baseline_f6c323d2da714563a13a263d6c249ac5_image.png",
+  "current_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\uploads\\current_76d8d3d59cc543d192e5949ad4261a2b_screenshot.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "diff_sidebar_presence",
+      "location": "Sidebar Navigation",
+      "what_changed": "Left category sidebar is present in CURRENT, absent in BASELINE.",
+      "direction": "neutral",
+      "reasoning": "Left category sidebar is present in CURRENT, absent in BASELINE.",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": false,
+      "confidence": 75
+    },
+    {
+      "id": "diff_warning_banner",
+      "location": "Warning Banner",
+      "what_changed": "Yellow demo disclaimer banner added near top of product list.",
+      "direction": "neutral",
+      "reasoning": "Yellow demo disclaimer banner added near top of product list.",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": false,
+      "confidence": 75
+    },
+    {
+      "id": "diff_browser_chrome",
+      "location": "Browser UI",
+      "what_changed": "Browser address bar and tabs are captured in CURRENT, exposing env chrome.",
+      "direction": "neutral",
+      "reasoning": "Browser address bar and tabs are captured in CURRENT, exposing env chrome.",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": false,
+      "confidence": 75
+    },
+    {
+      "id": "diff_page_header_breadcrumbs",
+      "location": "Header & Breadcrumbs",
+      "what_changed": "Breadcrumbs and main page heading are rendered in CURRENT.",
+      "direction": "neutral",
+      "reasoning": "Breadcrumbs and main page heading are rendered in CURRENT.",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": false,
+      "confidence": 75
+    },
+    {
+      "id": "diff_product_grid_content",
+      "location": "Product Grid Items",
+      "what_changed": "Different products displayed due to scroll offset and catalog positioning.",
+      "direction": "neutral",
+      "reasoning": "Different products displayed due to scroll offset and catalog positioning.",
+      "ux_impact": "May reduce readability or interaction clarity.",
+      "is_accessibility_regression": false,
+      "confidence": 75
+    }
+  ],
+  "verdict": "neutral",
+  "accessibility_regressions": 0,
+  "summary": "Found 5 differences: 0 regressions, 0 improvements, 5 neutral.",
+  "scan_duration_ms": 10123
+}

@@ -1,0 +1,44 @@
+{
+  "scan_id": "28e9df39-27c8-44b5-ba36-d26e8c1733a0",
+  "timestamp": "2026-06-06T17:38:38.732281Z",
+  "image_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-7\\test_valid_png_accepted0\\test.png",
+  "model_used": "gemini",
+  "findings": [
+    {
+      "id": "F001",
+      "principle": "Contrast",
+      "severity": "high",
+      "location": "hero CTA",
+      "issue": "Low contrast",
+      "user_impact": "Hard to read",
+      "recommendation": "Increase contrast",
+      "confidence": 90
+    },
+    {
+      "id": "F002",
+      "principle": "Spacing",
+      "severity": "medium",
+      "location": "header",
+      "issue": "Inconsistent spacing",
+      "user_impact": "Visual clutter",
+      "recommendation": "Adjust padding",
+      "confidence": 80
+    },
+    {
+      "id": "F003",
+      "principle": "Alignment",
+      "severity": "low",
+      "location": "footer",
+      "issue": "Misaligned links",
+      "user_impact": "Minor",
+      "recommendation": "Align items",
+      "confidence": 70
+    }
+  ],
+  "summary": "ok",
+  "total_findings": 3,
+  "critical_count": 0,
+  "scan_duration_ms": 4,
+  "warning": null,
+  "low_confidence": null
+}

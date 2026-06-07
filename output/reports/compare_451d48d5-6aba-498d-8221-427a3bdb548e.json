@@ -1,0 +1,46 @@
+{
+  "scan_id": "451d48d5-6aba-498d-8221-427a3bdb548e",
+  "timestamp": "2026-06-07T06:15:12.045501Z",
+  "baseline_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-58\\test_summary_dict_is_normalize0\\a.png",
+  "current_path": "C:\\Users\\S Prahitha\\AppData\\Local\\Temp\\pytest-of-S Prahitha\\pytest-58\\test_summary_dict_is_normalize0\\b.png",
+  "model_used": "gemini",
+  "differences": [
+    {
+      "id": "diff_02",
+      "location": "Footer",
+      "what_changed": "Footer spacing improved.",
+      "direction": "improvement",
+      "severity": "low",
+      "reasoning": "Footer spacing improved.",
+      "ux_impact": "Visual presentation appears more refined in the current screenshot.",
+      "is_accessibility_regression": false,
+      "confidence": 70,
+      "before_color": null,
+      "after_color": null,
+      "contrast_before": null,
+      "contrast_after": null,
+      "shift_x_px": null,
+      "shift_y_px": null,
+      "pixel_diff_percentage": null,
+      "bbox": null
+    }
+  ],
+  "verdict": "net_improvement",
+  "accessibility_regressions": 0,
+  "summary": "The image shows a higher contrast layout. Visual rating: 4",
+  "scan_duration_ms": 31,
+  "baseline_size": [
+    100,
+    100
+  ],
+  "current_size": [
+    100,
+    100
+  ],
+  "pixel_diff_pct": null,
+  "diff_pixels": null,
+  "diff_bbox": null,
+  "diff_overlay_path": "C:\\Users\\S Prahitha\\Desktop\\projects\\design audit\\design-audit-agent\\output\\reports\\compare_overlay_0ea20cdffdcc4ed9beb4d68910267ef7.png",
+  "baseline_crop_path": null,
+  "current_crop_path": null
+}

@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% block title %}Level 3 — Autonomous Scan{% endblock %}
+
+{% block content %}
+<div class="level-page">
+  <div class="lp-sidebar">
+    <a href="/" class="back-link">← Dashboard</a>
+    <div class="lp-meta">
+      <div class="lp-index lp-index--amber">03</div>
+      <h1 class="lp-title">Autonomous Scan</h1>
+      <p class="lp-desc">Authenticates, navigates, captures, and compares against stored baselines — no human in the loop. Dynamic content is filtered automatically.</p>
+    </div>
+    <div class="lp-criteria">
+      <div class="criteria-heading">Acceptance criteria</div>
+      <ul class="criteria-list">
+        <li>Login + redirect handling</li>
+        <li>≥ 3 pages, no prompting</li>
+        <li>Fixed viewport + scroll state</li>
+        <li>Versioned baseline store</li>
+        <li>Filters timestamps / spinners / tokens</li>
+        <li>Full scan &lt; 3 minutes</li>
+        <li>Baseline refresh on approval</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="lp-main">
+    <form method="post" action="/scan" enctype="multipart/form-data" class="lp-form">
+      <div class="form-section">
+        <label class="form-label" for="config">Scan Config <span class="form-hint">JSON</span></label>
+        <div class="file-input-wrap">
+          <input type="file" id="config" name="config" accept="application/json" required class="file-native" />
+          <label for="config" class="file-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+            </svg>
+            Choose config file
+          </label>
+          <span class="file-name" id="file-name-display">No file selected</span>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <label class="checkbox-row">
+          <input type="checkbox" name="refresh_baseline" class="form-checkbox" />
+          <span class="checkbox-text">
+            <strong>Refresh baseline</strong>
+            <span class="checkbox-sub">Re-capture baseline screenshots even if they already exist</span>
+          </span>
+        </label>
+      </div>
+
+      <details class="config-example">
+        <summary>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          Example config
+        </summary>
+        <pre>{
+  "scan_name": "checkout_flow",
+  "mode": "compare",
+  "auth": {
+    "login_url": "https://example.com/login",
+    "username_field": "input[name=\"email\"]",
+    "password_field": "input[name=\"password\"]",
+    "submit_selector": "button[type=submit]",
+    "username": "user@example.com",
+    "password": "secret",
+    "post_login_url_contains": "/dashboard"
+  },
+  "pages": [
+    {
+      "name": "cart",
+      "baseline_url": "https://example.com/cart",
+      "current_url": "https://example.com/cart",
+      "hide_selectors": [".spinner", ".timestamp"]
+    },
+    {
+      "name": "checkout",
+      "baseline_url": "https://example.com/checkout",
+      "current_url": "https://example.com/checkout",
+      "hide_selectors": [".loading"]
+    }
+  ]
+}</pre>
+      </details>
+
+      <button type="submit" class="btn-run btn-run--amber">
+        <span>Run Autonomous Scan</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </form>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  const input = document.getElementById("config");
+  const display = document.getElementById("file-name-display");
+  input?.addEventListener("change", () => {
+    display.textContent = input.files?.[0]?.name || "No file selected";
+    display.classList.toggle("has-file", !!input.files?.[0]);
+  });
+</script>
+{% endblock %}
