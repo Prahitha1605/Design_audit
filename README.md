@@ -25,7 +25,7 @@ Analyzes a single screenshot and identifies:
 python main.py audit path/to/screenshot.png
 
 
-🟡 Level 2 — Visual Regression Comparison
+# 🟡 Level 2 — Visual Regression Comparison
 
 Compares two screenshots:
 
@@ -43,7 +43,7 @@ Pixel-level differences
 python main.py compare baseline.png current.png
 
 
-🔵 Level 3 — Autonomous UI Audit System
+# 🔵 Level 3 — Autonomous UI Audit System
 
 Fully automated pipeline that:
 
@@ -94,6 +94,7 @@ Add API keys:
 
 GEMINI_API_KEY=your_key_here
 GROK_API_KEY=your_key_here
+
 🧪 Run Tests
 pytest -q
 
