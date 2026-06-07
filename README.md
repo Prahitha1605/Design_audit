@@ -19,9 +19,12 @@ Analyzes a single screenshot and identifies:
 - Color contrast issues
 - Accessibility concerns
 - UI/UX improvements
+
 ### ▶️ Run command:
-```bash
+
 python main.py audit path/to/screenshot.png
+
+
 🟡 Level 2 — Visual Regression Comparison
 
 Compares two screenshots:
@@ -38,6 +41,8 @@ Accessibility changes
 Pixel-level differences
 ▶️ Run command:
 python main.py compare baseline.png current.png
+
+
 🔵 Level 3 — Autonomous UI Audit System
 
 Fully automated pipeline that:
@@ -49,7 +54,7 @@ Compares baseline vs current states
 Generates structured regression reports
 ▶️ Run command:
 python main.py scan --config path/to/scan-config.json
-📄 Example config:
+📄 Example config (Level 3)
 {
   "mode": "compare",
   "page_name": "home",
@@ -57,27 +62,31 @@ python main.py scan --config path/to/scan-config.json
   "current_url": "https://example.com/after",
   "model": "gemini",
   "mock": false,
-  "viewport": { "width": 1280, "height": 900 }
+  "viewport": {
+    "width": 1280,
+    "height": 900
+  }
 }
-🖥️ Web Interface
+🖥️ Web Interface (Flask UI)
 
-Run the Flask UI locally:
+Run the web app locally:
 
 python web.py
 
 Then open:
 
 http://127.0.0.1:5000
+
+
 ⚙️ Setup Instructions
 1. Create virtual environment
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 2. Install dependencies
 pip install -r requirements.txt
-3. Install browser for automation
+3. Install browser automation tool
 python -m playwright install chromium
-
-. Environment setup
+4. Environment setup
 
 Copy .env.example → .env
 
@@ -85,8 +94,9 @@ Add API keys:
 
 GEMINI_API_KEY=your_key_here
 GROK_API_KEY=your_key_here
-🧪 Testing
+🧪 Run Tests
 pytest -q
 
+👨‍💻 Author
 
-
+Prahitha1605
