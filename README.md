@@ -19,11 +19,9 @@ Analyzes a single screenshot and identifies:
 - Color contrast issues
 - Accessibility concerns
 - UI/UX improvements
-
 ### ▶️ Run command:
 ```bash
 python main.py audit path/to/screenshot.png
-
 🟡 Level 2 — Visual Regression Comparison
 
 Compares two screenshots:
@@ -89,3 +87,6 @@ GEMINI_API_KEY=your_key_here
 GROK_API_KEY=your_key_here
 🧪 Testing
 pytest -q
+
+
+
